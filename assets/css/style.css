@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#aboutMe{
+    margin-left: 80px;
+}
+
+.fab{
+    padding: 5px;
+}

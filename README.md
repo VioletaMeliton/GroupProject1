@@ -47,4 +47,18 @@ The client can use the product to update events, and oversee admin issues
 Users can donate online and gather information about the organization
 Users can volunteer for events 
 
-
+Git merging branches with master
+1. You are on master and you want to go to branch
+    a. git checkout branchName 
+    b. git checkout master
+    c. git pull
+    d. git checkout branchName
+    e. git merge master
+2. After this step my branch is updated locally, now I can work on branch and make changes
+3. After I finished working on my branch I have to push them to master
+     a. git add . 
+     b. git commit -m ""
+     c. git push origin branchName
+     d. go to github and do "pull request"
+     e. someone from the team has to accept in order to update master
+     f. now everyone else can accept changes

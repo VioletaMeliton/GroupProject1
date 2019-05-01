@@ -12,7 +12,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- Firebase Reference -->
     <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
@@ -21,262 +22,248 @@
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
     <link rel="stylesheet" href="assets/css/style.css">
-
+    
 
 </head>
 
 <body>
+    <div class="row">
+        <div class="fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="col-md-2 ">
+                    <img class=“navbar-brand” src="assets/images/101 Basketball Academy.png" alt=“logo”>
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
 
+
+                <div class="col-md-8 ">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">About Me<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Sports
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Basketball</a>
+                                    <a class="dropdown-item" href="#">Volleyball</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Training</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Services
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Private one-on-one</a>
+                                    <a class="dropdown-item" href="#">Group session</a>
+                                    <a class="dropdown-item" href="#">Personal training</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Camps
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Upcoming Events</a>
+                                    <a class="dropdown-item" href="#">Past Events</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Join Us
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Volunteer</a>
+                                    <a class="dropdown-item" href="#">Sponsorship</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                <span class="col-md-2">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter-square"></i>
+                </span>
+            </nav>
+        </div>
+
+        <div class="container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.8653629796354!2d-119.26667928522167!3d34.43017488050471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e9a565876e12b3%3A0x924b94af564dbef6!2sVillanova+Preparatory+School!5e0!3m2!1sen!2sus!4v1556559648273!5m2!1sen!2sus"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <iframe
+                src="https://calendar.google.com/calendar/embed?title=Upcoming%20Basketball%20Camps&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=8m1c16vfv7tqlopprletu3e5rs%40group.calendar.google.com&amp;color=%23865A5A&amp;ctz=America%2FLos_Angeles"
+                style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+ 
+
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small blue-grey lighten-5">
+
+  <div style="background-color: #21d192;">
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="container">
-                <div class="collapse navbar-collapse" id="aboutMe">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">About me<span class="sr-only">(current)</span></a>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Sports
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Basketball</a>
-                                <a class="dropdown-item" href="#">Volleyball</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Training</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Services
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Private one-on-one</a>
-                                <a class="dropdown-item" href="#">Group session</a>
-                                <a class="dropdown-item" href="#">Personal training</a>
-                            </div>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Camps
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Upcoming Events</a>
-                                <a class="dropdown-item" href="#">Past Events</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Join Us
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Volunteer</a>
-                                <a class="dropdown-item" href="#">Sponsorship</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
-                        </li>
-
-                </div>
-
-                </ul>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter-square"></i>
-            </div>
-            </pre>
-    </div>
-    </nav>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="style.css">
-
-  <title></title>
-
-  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
-
-</head>
-
-<body>
-
-
-
-
-
- <!-- Footer -->
-<footer class="page-footer font-small mdb-color pt-4">
-
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left">
-
-      <!-- Footer links -->
-      <div class="row text-center text-md-left mt-3 pb-3">
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
 
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Company name</h6>
-          <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit.</p>
-        </div>
-        <!-- Grid column -->
-
-        <hr class="w-100 clearfix d-md-none">
-
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-          <p>
-            <a href="#!">MDBootstrap</a>
-          </p>
-          <p>
-            <a href="#!">MDWordPress</a>
-          </p>
-          <p>
-            <a href="#!">BrandFlow</a>
-          </p>
-          <p>
-            <a href="#!">Bootstrap Angular</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <hr class="w-100 clearfix d-md-none">
-
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
-          <p>
-            <a href="#!">Your Account</a>
-          </p>
-          <p>
-            <a href="#!">Become an Affiliate</a>
-          </p>
-          <p>
-            <a href="#!">Shipping Rates</a>
-          </p>
-          <p>
-            <a href="#!">Help</a>
-          </p>
-        </div>
-
-        <!-- Grid column -->
-        <hr class="w-100 clearfix d-md-none">
-
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-            <form>
-                <h6 class="text-uppercase mb-4 font-weight-bold">Contact Us:</h6>
-                <div class="form-group">
-                <label for="name">Name</label>
-                    <input type="name" class="form-control" id="name" aria-describedby="name" placeholder="John Smith">
-                      </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="example@gmail.com">
-                </div>
-                <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea class="form-control" id="message" rows="3"></textarea>
-                      </div>
-                
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-        </div>
-        <!-- Grid column -->
-
-      </div>
-      <!-- Footer links -->
-
-      <hr>
-
-      <!-- Grid row -->
-      <div class="row d-flex align-items-center">
-
-        <!-- Grid column -->
-        <div class="col-md-7 col-lg-8">
-
-          <!--Copyright-->
-          <p class="text-center text-md-left">© Copyright:
-            <a href="https://mdbootstrap.com/education/bootstrap/">
-              <strong> 101BasketballAcademy.com</strong>
-            </a>
-          </p>
-
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="text-uppercase font-weight-bold">Training the right way!!</h6>
         </div>
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-5 col-lg-4 ml-lg-0">
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
 
-          <!-- Social buttons -->
-          <div class="text-center text-md-right">
-            <ul class="list-unstyled list-inline">
-              <li class="list-inline-item">
-                <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                  <i class="fab fa-google-plus-g"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram white-text"> </i>
+          </a>
 
         </div>
         <!-- Grid column -->
 
       </div>
-      <!-- Grid row -->
+      <!-- Grid row-->
 
     </div>
-    <!-- Footer Links -->
+  </div>
 
-  </footer>
-  <!-- Footer -->
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3 dark-grey-text">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mb-4">
+
+        <!-- Content -->
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" >
+        <img class=“navbar-brand” src="assets/images/101 Basketball Academy.png" alt=“logo”>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-6 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">About Me</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto">
+        <p>
+          <a class="dark-grey-text" href="#!">My Approach</a>
+        </p>
+      
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Camps</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" >
+        <p>
+          <a class="dark-grey-text" href="#!">Upcoming Events</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Passed Camps</a>
+        </p>
+        
+      </div>
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Join Us</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" >
+        <p>
+          <a class="dark-grey-text" href="#!">Volunteer</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Sponsorship</a>
+        </p>
+        
+      </div>
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
+       
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto">
+        <p> <i class="fas fa-home mr-3"></i> Ventura County, US</p>
+        <p> <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+        <p> <i class="fas fa-phone mr-3"></i> + 01 805 746-8582</p>
+        
+        
+      
+         
+      </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center text-black-50 py-3">© Copyright 101 Basketball Academy
+    
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="app.js"></script>
 

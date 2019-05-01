@@ -2,11 +2,25 @@ body{
     text-align: center;
     margin: 0 auto;
 }
+* {
+    box-sizing: border-box;
+  }
 
-#aboutMe{
-    margin-left: 80px;
-}
-
-.fab{
+/* .fab{
     padding: 5px;
+} */
+
+.container{
+    margin-top: 150px;
 }
+/* iframe{
+    margin-top: 150px;
+    margin-left: 200px;
+} */
+footer{
+    width: 100%;
+}
+
+
+
+ 

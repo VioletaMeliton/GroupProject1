@@ -6,17 +6,11 @@ body{
     box-sizing: border-box;
   }
 
-/* .fab{
-    padding: 5px;
-} */
-
 .container{
     margin-top: 150px;
 }
-/* iframe{
-    margin-top: 150px;
-    margin-left: 200px;
-} */
+
+
 footer{
     width: 100%;
 }

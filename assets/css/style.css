@@ -511,3 +511,50 @@ input, select, textarea, input[type="text"], input[type="date"], input[type="url
   font-size: 14px;
 }
 
+=======
+body{
+    text-align: center;
+    margin: 0 auto;
+    background-image: url("../images/background\ image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Times New Roman", Times, serif;
+}
+* {
+    box-sizing: border-box;
+  }
+
+.bd-example, .wrapper{
+    margin-top: 95px;
+    color:white;
+}
+
+.wrapper{
+    color:black;
+}
+
+footer{
+    width: 100%;
+}
+
+.main-images img{
+   display: none;
+   margin: 0 auto;
+}
+
+.main-images img:first-of-type{
+    display: block;
+}
+
+h1{
+    font-weight: bold;
+}
+
+.card.mb-3{
+    margin:0 auto;
+}
+
+/* private lessons section */
+
+

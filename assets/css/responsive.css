@@ -1,0 +1,145 @@
+@media (min-width: 1920px) {
+  .work-right-text {
+    padding: 150px 150px;
+  }
+}
+
+/* Normal desktop :992px. */
+
+@media (min-width: 992px) and (max-width: 1169px) {
+  .slider-content {
+    padding: 146px 0;
+  }
+  .work-right-text {
+    padding: 40px 0;
+  }
+  .work-right-text h2 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+/* Tablet desktop :768px. */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-menu ul.navbar-nav li {
+    display: inline-block;
+    padding: 0 8px;
+  }
+  .layer-1-1 h2 {
+    font-size: 24px;
+  }
+  .layer-1-2 h1 {
+    font-size: 31px;
+    line-height: 38px;
+    padding: 0px 30px;
+  }
+  .stick .main-menu ul.navbar-nav li a {
+    padding: 24px 0px;
+  }
+  .tab-menu ul.nav li a {
+    padding: 10px 16px;
+  }
+  .suscribe-input input {
+    width: 60%;
+  }
+  .suscribe-input button {
+    width: 40%;
+  }
+  .team-content.text-center>h4 {
+    font-size: 20px;
+  }
+  .sus-btn {
+    margin-left: 0;
+  }
+  .suscribe-text h3 {
+    font-size: 16px;
+    padding-right: 20px;
+  }
+  .work-right-text h5 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .work-right-text {
+    padding: 36px 0;
+  }
+  .work-right-text h2 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .work-right-text .ready-btn {
+    font-size: 13px;
+    padding: 7px 20px;
+    margin-top: 5px;
+  }
+}
+
+/* small mobile :320px. */
+
+@media (max-width: 767px) {
+
+  .header-area {
+    height: 60px !important;
+    background: #000;
+  }
+  .navbar-header a.navbar-brand, .stick .navbar-header a.navbar-brand {
+    display: inline-block;
+    height: 60px  !important;
+    padding: 9px 0;
+  }
+  .navbar-default .navbar-toggle, .stick .navbar-default .navbar-toggle {
+    padding: 15px 0;
+  }
+  .nav.navbar-nav.navbar-right, .stick .nav.navbar-nav.navbar-right {
+    background-color: #252525;
+    padding: 0;
+    margin-top: 0;
+  }
+  .main-menu ul.navbar-nav li, .stick .main-menu ul.navbar-nav li {
+    display: block;
+  }
+  .main-menu ul.navbar-nav li a, .stick .main-menu ul.navbar-nav li a {
+    padding: 10px 2px;
+  }
+  .main-menu ul.navbar-nav li.active a::after, .stick .main-menu ul.navbar-nav li.active a::after {
+    border: 0px solid #fff;
+  }
+  .logo {
+    height: inherit;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    top: -6px;
+    z-index: 999999;
+  }
+  .logo a {
+    padding: 0;
+  }
+
+  .slider-area {
+    margin-top: 60px;
+  }
+
+  .slider-content h2 {
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
+  .slider-content h1 {
+    font-size: 20px !important;
+    line-height: 26px !important;
+  }
+
+  .layer-1-3 a.ready-btn {
+    padding: 8px 15px;
+  }
+  .section-headline h2 {
+    font-size: 30px;
+  }
+  .well-middle .single-well {
+    margin-top: 30px;
+  }
+  .wellcome-text {
+    margin: 0px;
+    padding: 70px 0px;
+  }
+}

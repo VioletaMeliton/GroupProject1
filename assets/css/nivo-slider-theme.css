@@ -60,15 +60,15 @@
 
 .layer-1-3 a.ready-btn:hover {
   color: #fff;
-  background: #3EC1D5;
-  border: 1px solid #3EC1D5;
+  background: rgb(204, 101, 5);
+  border: 1px solid rgb(204, 101, 5);
   text-decoration: none;
 }
 
 .ready-btn.right-btn {
   margin-right: 15px;
-  background: #3EC1D5;
-  border: 1px solid #3EC1D5 !important;
+  background: rgb(204, 101, 5);
+  border: 1px solid rgb(204, 101, 5) !important;
 }
 
 .ready-btn.right-btn:hover {
@@ -185,42 +185,6 @@
     line-height: 30px;
   }
 }
-
-/* -------------------------------------
-preview-1
----------------------------------------- */
-
-/* .preview-1 .nivoSlider {
-  position: relative;
-  background: url(../lib/nivo-slider/img/loading.gif) no-repeat 100%;
-}
-
-.preview-1 .nivoSlider img {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  display: none;
-}
-
-.preview-1 .nivoSlider a {
-  border: 0;
-  display: block;
-}
-
-.preview-1 .nivo-controlNav {
-  text-align: center;
-  padding: 20px 0;
-}
-
-.preview-1 .nivo-controlNav a {
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  background: url(../lib/nivo-slider/img/bullets.png) no-repeat;
-  text-indent: -9999px;
-  border: 0;
-  margin: 0 2px;
-} */
 
 .preview-1 .nivo-controlNav a.active {
   background-position: 0 -22px;

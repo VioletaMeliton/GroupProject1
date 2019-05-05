@@ -79,8 +79,8 @@
 @media (max-width: 767px) {
 
   .header-area {
-    height: 60px !important;
-    background: #000;
+    height: 120px !important;
+    background: rgb(206, 125, 71);
   }
   .navbar-header a.navbar-brand, .stick .navbar-header a.navbar-brand {
     display: inline-block;

@@ -105,7 +105,7 @@
 
 .nivo-controlNav a:hover, .nivo-controlNav a.active {
   background: #fff none repeat scroll 0 0;
-  border-color: #3EC1D5;
+  border-color: rgb(209, 119, 35);
   -moz-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -o-transform: rotate(180deg);

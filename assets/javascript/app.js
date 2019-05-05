@@ -25,6 +25,7 @@ $.ajax({
         console.log("Temperature (F): " + response.main.temp);
     });
 
+
 (function ($) {
     $(window).on('load', function () {
         var pre_loader = $('#preloader');
@@ -165,3 +166,24 @@ $.ajax({
     });
 
 })(jQuery);
+
+
+/*---------------------
+    Services
+    ---------------------*/
+
+
+$("#toggle").click(function () {
+    var elem = $("#toggle").text();
+    if (elem == "Read More") {
+        //Stuff to do when btn is in the read more state
+        $(this).text("Read Less");
+        $(".card-text").slideDown();
+    } else {
+        //Stuff to do when btn is in the read less state
+        $(this).text("Read More");
+        $(".card-text").slideUp();
+    }
+});
+
+

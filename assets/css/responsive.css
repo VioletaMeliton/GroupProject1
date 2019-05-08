@@ -40,14 +40,30 @@
   .tab-menu ul.nav li a {
     padding: 10px 16px;
   }
+<<<<<<< HEAD
   
+=======
+  .suscribe-input input {
+    width: 60%;
+  }
+  .suscribe-input button {
+    width: 40%;
+  }
+>>>>>>> 52a71b18ca36c1b7720f0efa25e86605783d4da8
   .team-content.text-center>h4 {
     font-size: 20px;
   }
   .sus-btn {
     margin-left: 0;
   }
+<<<<<<< HEAD
   
+=======
+  .suscribe-text h3 {
+    font-size: 16px;
+    padding-right: 20px;
+  }
+>>>>>>> 52a71b18ca36c1b7720f0efa25e86605783d4da8
   .work-right-text h5 {
     font-size: 14px;
     line-height: 22px;

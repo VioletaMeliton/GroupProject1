@@ -147,14 +147,6 @@ ul {
   padding: 70px 0px 80px;
 }
 
-.area-padding-2 {
-  padding: 70px 0px 50px;
-}
-
-.padding-2 {
-  padding-bottom: 90px;
-}
-
 .section-headline h2 {
   display: inline-block;
   margin-top:60px;
@@ -517,17 +509,6 @@ footer{
 .card img{
   border-radius: 20px 20px 0  0 ;
 }
-
-/*--------------------------------*/
-
-/* 4.Google Calendar
-/*--------------------------------*/
-
-iframe{
-  margin-top:120px;
-}
-
-
 video { 
   position: absolute;
   top: 50%;
@@ -561,3 +542,24 @@ div{width:70%;}
 @media screen and (max-device-width: 800px) {
 #bgvid { display: none; }
 }
+
+/*--------------------------------*/
+
+/* 4.Google Calendar
+/*--------------------------------*/
+
+iframe{
+  margin-left:150px;
+}
+
+#calendarlink{
+  margin-top:120px;
+}
+
+#upcoming-events{
+  background-image: url("../images/finnian-hadiep-1476980-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+

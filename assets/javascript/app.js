@@ -47,6 +47,47 @@ $.ajax({
             s.removeClass("stick");
         }
     });
+    $(function () {
+
+        var $window = $(window),
+            win_height_padded = $window.height() * 1.1,
+            isTouch = Modernizr.touch;
+
+        if (isTouch) { $('.revealOnScroll').addClass('animated'); }
+
+        $window.on('scroll', revealOnScroll);
+
+        function revealOnScroll() {
+            var scrolled = $window.scrollTop(),
+                win_height_padded = $window.height() * 1.1;
+
+            // Showed...
+            $(".revealOnScroll:not(.animated)").each(function () {
+                var $this = $(this),
+                    offsetTop = $this.offset().top;
+
+                if (scrolled + win_height_padded > offsetTop) {
+                    if ($this.data('timeout')) {
+                        window.setTimeout(function () {
+                            $this.addClass('animated ' + $this.data('animation'));
+                        }, parseInt($this.data('timeout'), 10));
+                    } else {
+                        $this.addClass('animated ' + $this.data('animation'));
+                    }
+                }
+            });
+            // Hidden...
+            $(".revealOnScroll.animated").each(function (index) {
+                var $this = $(this),
+                    offsetTop = $this.offset().top;
+                if (scrolled + win_height_padded < offsetTop) {
+                    $(this).removeClass('animated fadeInUp flipInX lightSpeedIn')
+                }
+            });
+        }
+
+        revealOnScroll();
+    });
 
     /*----------------------------
      Navbar nav
@@ -143,27 +184,7 @@ $.ajax({
         $(this).addClass('active');
     });
 
-    /*---------------------
-     Testimonial carousel
-    ---------------------*/
-    var test_carousel = $('.testimonial-carousel');
-    test_carousel.owlCarousel({
-        loop: true,
-        nav: false,
-        dots: true,
-        autoplay: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            768: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    });
+
 
 })(jQuery);
 
@@ -171,19 +192,4 @@ $.ajax({
 /*---------------------
     Services
     ---------------------*/
-
-
-$("#toggle").click(function () {
-    var elem = $("#toggle").text();
-    if (elem == "Read More") {
-        //Stuff to do when btn is in the read more state
-        $(this).text("Read Less");
-        $(".card-text").slideDown();
-    } else {
-        //Stuff to do when btn is in the read less state
-        $(this).text("Read More");
-        $(".card-text").slideUp();
-    }
-});
-
 

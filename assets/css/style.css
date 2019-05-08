@@ -528,6 +528,7 @@ iframe{
   margin-top:120px;
 }
 
+<<<<<<< HEAD
 
 video { 
   position: absolute;
@@ -562,3 +563,16 @@ div{width:70%;}
 @media screen and (max-device-width: 800px) {
 #bgvid { display: none; }
 }
+=======
+/* Press HTML Page
+/*--------------------------------*/
+#press {
+  margin-top: 200px;
+}
+
+/* Gallery HTML Page
+/*--------------------------------*/
+#gallery {
+  margin-top: 200px;
+}
+>>>>>>> 52a71b18ca36c1b7720f0efa25e86605783d4da8

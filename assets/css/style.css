@@ -329,9 +329,6 @@ ul {
   color: #c95511;
 }
 
-.weather{
-  text-align: center;
-}
 .stick .main-menu ul.navbar-nav li.active > a::after {
   border: 1px solid #fff;
   bottom: 0px;
@@ -517,9 +514,14 @@ footer{
 }
 
 .weather{
+  float: right;
+  margin-top: 68px;
+  width: 150px;;
   text-align: center;
   background-color: rgba(202, 100, 4, 0.993);
-  border-radius: 100px;
+  overflow: visible;
+  border-radius: 150px;
+  opacity: 0.7;
 }
 
 .btn.btn-primary{
@@ -531,7 +533,14 @@ footer{
 .card{
   border:1px solid white;
   border-radius:20px;
+  background-color: black; 
 }
+.card:hover{
+  box-shadow: 5px 10px 8px #888888;
+  transform: translate(10px,10px);
+  transition: box-shadow;
+}
+
 
 .card img{
   border-radius: 20px 20px 0  0 ;
@@ -587,12 +596,8 @@ iframe{
   margin-left:150px;
 }
 
-#calendarlink{
-  margin-top:120px;
-}
-
 #upcoming-events{
-  background-image: url("../images/finnian-hadiep-1476980-unsplash.jpg");
+  background-image: url("../images/basketball.jpg");
   background-size: cover;
   background-attachment: fixed;
 }

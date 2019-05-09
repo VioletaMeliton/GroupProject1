@@ -1,6 +1,4 @@
-body {
-  background-color: red;
-}
+
 /*----------------------------------------*/
 /*  1.  Theme default CSS
 /*----------------------------------------*/
@@ -262,4 +260,8 @@ div#preloader {
   .stick .navbar-default .navbar-toggle {
     padding: 10px 0px;
   }
+
+
+
+
  

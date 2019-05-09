@@ -20,9 +20,6 @@ body{
     color:black;
 }
 
-footer{
-    width: 100%;
-}
 
 .main-images img{
    display: none;
@@ -43,13 +40,6 @@ h1{
 
 /* private lessons section */
 
-<<<<<<< HEAD
 
 
  
-=======
-.wrapper{
-background-color: beige;
-border: 1px solid white;
-}
->>>>>>> master

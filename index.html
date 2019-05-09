@@ -250,33 +250,31 @@
                             <a href="#">
                                 <h4 class="sec-head">Eugene Ayala (head coach of Villanova Prep School)</h4>
                             </a>
-                            <p>
-                                With over 18 years of coaching and training experience, Coach Eugene Ayala will work
+
+                            <p class="card-text">With over 18 years of coaching and training experience, Coach Eugene
+                                Ayala will work
                                 with his athletes to develop and refine fundamental basketball skills as well as a
                                 mindset and work ethic that will serve them not only on the court, but in all
-                                aspects of
-                                their life.
-
-                                In addition to training young athletes through 101 Basketball Academy, Coach Ayala
-                                also
-                                serves as the boy's basketball coach at Pacifica High School in Oxnard, CA. Having
-                                coached at several area schools, Coach Ayala thrives in enhancing the culture and
-                                direction of any basketball program he is a part of.
+                                aspects of their life. In addition to training young athletes through 101 Basketball
+                                Academy, Coach Ayala
+                                also serves as the boy's basketball coach at Pacifica High School in Oxnard, CA. Having
+                                coached at several area schools, he thrives in enhancing the culture and
+                                direction of any basketball program he is a part of. <p id="dots">...</p>
+                                <p id="more"> Coach Ayala is also the originator of the 101 Basketball Academy's
+                                    Special
+                                    Needs
+                                    Basketball Camp. He is now preparing to host the camp for the sixth
+                                    straight
+                                    year. He has seen the camp grow from just over 50 campers the first year to over 250
+                                    campers last year (over the 2-day event). The camp allows the community members with
+                                    disabilities participate in dribbling, shooting and passing drills. It also serves
+                                    as an
+                                    opportunity for the camp volunteers to interact with individuals they may not
+                                    otherwise
+                                    have the opportunity to do so. The camps volunteers are mainly comprised of Coach
+                                    Ayala's family, friends and current & former players.</p>
                             </p>
-                            ​
-                            <p class="card-text">
-                                Coach Ayala is also the originator of the 101 Basketball Academy's Special Needs
-                                Basketball Camp. Coach Ayala is now preparing to host the camp for the sixth
-                                straight
-                                year. He has seen the camp grow from just over 50 campers the first year to over 250
-                                campers last year (over the 2-day event). The camp allows the community members with
-                                disabilities participate in dribbling, shooting and passing drills. It also serves
-                                as an
-                                opportunity for the camp volunteers to interact with individuals they may not
-                                otherwise
-                                have the opportunity to do so. The camps volunteers are mainly comprised of Coach
-                                Ayala's family, friends and current & former players.
-                            </p>
+                            <button class="btn btn-danger" onclick="myFunction()" id="myBtn">Read more</button>
                         </div>
 
                     </div>
@@ -288,23 +286,21 @@
     <!-- End About area -->
 
     <!-- Start Service area -->
-    <div class="services-area area-padding">
+    <div class="services-area area-padding" id="services">
         <div class="section-headline services-head text-center wow fadeInUp delay-05s">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <!-- Start video hero -->
-                        <video poster="assets/images/warmup training.JPG" id="bgvid" playsinline autoplay muted loop
+                        <video poster="assets/images/josh-kahen-1400679-unsplash.jpg" id="bgvid" playsinline autoplay
+                            muted loop
                             style="height: 700px; background-image:  src='assets/images/villanova team won .jpg';  background-size:cover; position: center center;background-attachment:fixed;opacity: 0.8;"
                             data-section="home">
-                            <source
-                                src="https://drive.google.com/uc?export=download&id=1ctHxCsGtDAKznpcaa3fZAvco7cAfKhqE"
-                                type="video/mp4">
+                            <source src="assets/images/media.io_MVI_4998.mp4" type="video/mp4">
 
                         </video>
 
-                        <h2 id="services">Our Services</h2>
-
+                        <h2>Our Services</h2>
                         <p>I offer a free first training for all new clients who are interesterd in the program. I
                             usually make parents give me a recording of their training or games, so I can asses
                             their
@@ -328,14 +324,16 @@
                                 alt="villanova prep practice">
                             <div class="card-body">
                                 <h5 class="card-title">Camps</h5>
-                                <p class="card-text">Every season I commence camps for group sessions of 15-20
-                                    students.
-                                    The trainings are comprehensive that
-                                    include a warmup, pool training, and step-by-step baskebtall learning. Players
-                                    learn
-                                    critical individual
-                                    skills that enhances their ability as a team player. They are also
-                                    coached on handling the mental and emotional aspects of basketball.</p>
+                                <div>
+                                    <input type="checkbox" class="read-more-state" id="post-1" />
+                                    <p class="read-more-wrap">Every season I commence camps for group sessions of 15-20
+                                        students. The trainings are comprehensive that
+                                        <span class="read-more-target">include a warmup, pool training, and step-by-step
+                                            baskebtall learning. Players learn critical individual skills that enhances
+                                            their ability as a team player. They are also
+                                            coached on handling the mental and emotional aspects of basketball.</span>
+                                    </p><label for="post-1" class="read-more-trigger"></label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -345,10 +343,18 @@
                         <img src="assets/images/pool activity.JPG" class="card-img-top" alt="pool activity">
                         <div class="card-body">
                             <h5 class="card-title">Semi-private training</h5>
-                            <p class="card-text">Players learn critical individual skills that enhances their
-                                ability as a team player. They are also
-                                coached on handling the mental and emotional aspects of basketball.
-                                I am willing to commute to a more convenient location upon request.</p>
+                            <div>
+                                <input type="checkbox" class="read-more-state" id="post-2" />
+                                <p class="read-more-wrap">
+                                    <span>Players learn critical individual skills that enhances their
+                                        ability as a team player.</span>
+                                    <span class="read-more-target">They are also
+                                        coached on handling the mental and emotional aspects of basketball.
+                                        I am willing to commute to a more convenient location upon request.</span>
+                                </p>
+                                <label for="post-2" class="read-more-trigger"></label>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -358,14 +364,20 @@
                     <img src="assets/images/boy training.JPG" class="card-img-top" alt="private training">
                     <div class="card-body">
                         <h5 class="card-title">Private one-on-one</h5>
-                        <p class="card-text">Semi-private training is a small group of upto 5 people and
-                            under
-                            put together either by me or by the
-                            request of the client. Players develop individual skills, then work together to
-                            utilize those skills in
-                            various game scenarios.I am willing to commute to a more convenient location
-                            upon
-                            request.</p>
+                        <div>
+                            <input type="checkbox" class="read-more-state" id="post-3" />
+                            <p class="read-more-wrap">Semi-private training is a small group of upto 5 people and
+                                under
+                                put together either by me or by the
+                                request
+                                <span class="read-more-target"> of the client.Players develop individual skills, then
+                                    work together to
+                                    utilize those skills in
+                                    various game scenarios.I am willing to commute to a more convenient location
+                                    upon
+                                    request.</span>
+                            </p><label for="post-3" class="read-more-trigger"></label>
+                        </div>
                     </div>
                 </div>
             </div>

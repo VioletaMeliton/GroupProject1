@@ -1,0 +1,10 @@
+
+
+
+.carousel-item {
+    height: 100px;;
+    width: 200px;
+}
+#carouselExampleControls{
+    background-color: red;
+}

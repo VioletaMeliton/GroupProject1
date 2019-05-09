@@ -12,7 +12,7 @@ img {
   max-width: 1000px;
   position: relative;
   margin: auto;
-  background-color: red;
+ 
   margin-top: 200px; /*added */
   height: 500px;   /*added */
 }

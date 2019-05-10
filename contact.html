@@ -1,200 +1,270 @@
-<!DOCTYPE html>
-
-<html lang="en-us">
+<!doctype html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <title>101 Basketball Academy</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-	<meta charset="UTF-8">
-	<title>101 Basketball Academy</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-	<!-- Moment.js Reference -->
-	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-
-	<link rel="stylesheet" href="assets/css/contact.css">
-	<link rel="stylesheet" href="assets/css/footer.css">
-	<!-- Bootstrap core CSS -->
-	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Libraries CSS Files -->
+    <link href="lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+    <link href="lib/owlcarousel/owl.carousel.css" rel="stylesheet">
+    <link href="lib/owlcarousel/owl.transitions.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/venobox/venobox.css" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
 
 
-	<!-- Custom styles for this template -->
-	<link href="css/grayscale.min.css" rel="stylesheet">
+    <!-- Nivo Slider Theme -->
+    <link href="assets/css/nivo-slider-theme.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="assets/css/footer.css" rel="stylesheet">
+    <link href="assets/css/contact.css" rel="stylesheet">
+
+    <!-- Responsive Stylesheet File -->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
 
 </head>
 
-<body>
-	<div class="pure-u-1-5"></div>
-<div class="pure-u-3-5">
-    <div style="display:none"  id="thankyou_message">
-        <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+<body data-spy="scroll" data-target="#navbar-example">
+
+    <div id="preloader"></div>
+
+    <header>
+        <!-- header-area start -->
+        <div id="sticker" class="header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+
+                        <!-- Navigation -->
+                        <nav class="navbar navbar-default">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <!-- Brand -->
+                                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                                    <img src="assets/images/101 Basketball Academy copy.png"
+                                        alt="101 basketball academy" title="101 basketball academy">
+                                </a>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1"
+                                id="navbar-example">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                                        <a class="page-scroll" href="#about">About Me</a>
+                                    </li>
+                                    <li>
+                                        <a class="page-scroll" href="#services">Services</a>
+                                    </li>
+
+                                    <li class="dropdown"><a href="#" class="dropdown-toggle"
+                                            data-toggle="dropdown">Camps<span class="caret"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="upcoming-events.html">Upcoming events</a></li>
+                                            <li><a href=#>Past events</a></li>
+                                        </ul>
+                                    </li>
+
+
+                                    <li>
+                                        <a class="page-scroll" href="galleryClean.html">Gallery</a>
+                                    </li>
+                                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Join
+                                            Us<span class="caret"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href=#>Volunteer</a></li>
+                                            <li><a href=#>Sponsorship</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="page-scroll" href="#news">News</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="page-scroll" href="#contact">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- navbar-collapse -->
+                        </nav>
+                        <!-- END: Navigation -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header-area end -->
+    </header>
+    <!-- header end -->
+    <div class="pure-u-1-5"></div>
+    <div class="pure-u-3-5">
+        <div style="display:none"  id="thankyou_message">
+            <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+        </div>
     </div>
-</div>
+    
+    
+        <div class="pure-u-1-5"></div>
+        <div class="pure-u-3-5">
+            <form id="gform" class="pure-form pure-form-aligned" method="POST"
+                action="https://script.google.com/macros/s/AKfycbzr6FGjGwWbOEJrlD29AY2e5ArfK8XK0S7nXUw2AA/exec">
+                <fieldset>
+                    <legend style="text-align: center">Contact Form</legend>
+                    <div class="pure-control-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name">
+                    </div>
+                    <div class="pure-control-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="pure-control-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" cols="33" placeholder="Enter Message..."
+                            style="width: 218px"></textarea>
+                    </div>
+                    <div class="pure-controls">
+                        <button type="submit" class="button-secondary pure-button"
+                            style="background: rgb(66, 184, 221)">Submit</button>
+    
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    
+        <!--Google map-->
+        <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
+            <div id="right-panel" frameborder="0" style="border:0" allowfullscreen></div>
+            <div id="map" frameborder="0" style="border:0" allowfullscreen></div>
+            <input type="hidden" value="villanova preparatory, ojai city" id="end" />
+    
+        </div>
+    
+        <br>
+    
+        </div>
 
-<div class="pure-u-1-5"></div>
-<div class="pure-u-3-5">
-    <form id="gform" class="pure-form pure-form-aligned" method="POST" action="https://script.google.com/macros/s/AKfycbzr6FGjGwWbOEJrlD29AY2e5ArfK8XK0S7nXUw2AA/exec">
-        <fieldset>
-            <legend style="text-align: center">Contact Form</legend>
-            <div class="pure-control-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Name">
+
+
+
+
+
+    <!-- Footer start -->
+    <section class="contact-section bg-black">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100" id="contactbox">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Address</h4>
+                            <hr class="my-4">
+                            <div class="small text-black-50">
+                                <a href ="https://goo.gl/maps/Up2ci3me8ac4Dxzp9">12096 N Ventura Ave, Ojai, CA 93023</a>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100" id="contactbox">
+                        <div class="card-body text-center">
+                            <i class="fas fa-envelope text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Email</h4>
+                            <hr class="my-4">
+                            <div class="small text-black-50">
+                                <a href="mailto:101basketballacademy@gmail.com">101basketballacademy@gmail.com</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100" id="contactbox">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Phone</h4>
+                            <hr class="my-4">
+                            <div class="small text-black-50"><a href="tel:18057468582">+1 (805) 746-8582</a></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="pure-control-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Email">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div id="socialmedia">
+                        <a class="socialicons" href="#">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a class="socialicons" href="#">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a class="socialicons" href="#">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="pure-control-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" cols="33" placeholder="Enter Message..." style="width: 218px"></textarea>
-            </div>
-            <div class="pure-controls">
-								<button type="submit" class="button-secondary pure-button" style="background: rgb(66, 184, 221)">Submit</button>
-							
-            </div>
-        </fieldset>
-    </form>
-</div>
 
-		<!--Google map-->
-		<div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
-			<div id="right-panel" ></div>
-			<div id="map" frameborder="0" style="border:0" allowfullscreen></div>
-			<input type="hidden" value="villanova preparatory, ojai city" id="end" />
-		
-		</div>
-	</div>
+        </div>
+    </section>
 
-	<div class="pure-u-1-5"></div>
-	<div class="pure-u-3-5">
-		<form id="gform" class="pure-form pure-form-aligned" method="POST"
-			action="https://script.google.com/macros/s/AKfycbzr6FGjGwWbOEJrlD29AY2e5ArfK8XK0S7nXUw2AA/exec">
-			<fieldset>
-				<legend style="text-align: center">Contact Form</legend>
-				<div class="pure-control-group">
-					<label for="name">Name</label>
-					<input type="text" id="name" name="name" placeholder="Name">
-				</div>
-				<div class="pure-control-group">
-					<label for="email">Email</label>
-					<input type="email" id="email" name="email" placeholder="Email">
-				</div>
-				<div class="pure-control-group">
-					<label for="message">Message</label>
-					<textarea id="message" name="message" rows="5" cols="33" placeholder="Enter Message..."
-						style="width: 218px"></textarea>
-				</div>
-				<div class="pure-controls">
-					<button type="submit" class="button-secondary pure-button"
-						style="background: rgb(66, 184, 221)">Submit</button>
+    <footer class="bg-black small text-center text-white">
+        <div class="container">
+            Copyright &copy; 101 Basketball Academy 2019
+        </div>
+    </footer>
 
-				</div>
-			</fieldset>
-		</form>
-	</div>
+    <!-- Footer end-->
 
-	<!--Google map-->
-	<div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
-		<div id="right-panel" frameborder="0" style="border:0" allowfullscreen></div>
-		<div id="map" frameborder="0" style="border:0" allowfullscreen></div>
-		<input type="hidden" value="villanova preparatory, ojai city" id="end" />
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-	</div>
-
-	<br>
-
-	</div>
-
-	<!-- Contact Section -->
-	<section class="contact-section bg-black">
-		<div class="container">
-
-			<div class="row">
-
-				<div class="col-md-4 mb-3 mb-md-0">
-					<div class="card py-4 h-100">
-						<div class="card-body text-center">
-							<i class="fas fa-map-marked-alt text-primary mb-2"></i>
-							<h4 class="text-uppercase m-0">Address</h4>
-							<hr class="my-4">
-							<div class="small text-black-50">
-								<font color="#b45b07">12096 N Ventura Ave, Ojai, CA 93023</font>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4 mb-3 mb-md-0">
-					<div class="card py-4 h-100">
-						<div class="card-body text-center">
-							<i class="fas fa-envelope text-primary mb-2"></i>
-							<h4 class="text-uppercase m-0">Email</h4>
-							<hr class="my-4">
-							<div class="small text-black-50">
-								<a href="mailto:101basketballacademy@gmail.com">101basketballacademy@gmail.com</a>
-
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4 mb-3 mb-md-0">
-					<div class="card py-4 h-100">
-						<div class="card-body text-center">
-							<i class="fas fa-mobile-alt text-primary mb-2"></i>
-							<h4 class="text-uppercase m-0">Phone</h4>
-							<hr class="my-4">
-							<div class="small text-black-50"><a href="tel:18057468582">+1 (805) 746-8582</a></div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="social d-flex justify-content-center">
-				<a href="#" class="mx-2">
-					<i class="fab fa-twitter"></i>
-				</a>
-				<a href="#" class="mx-2">
-					<i class="fab fa-facebook-f"></i>
-				</a>
-				<a href="#" class="mx-2">
-					<i class="fab fa-github"></i>
-				</a>
-			</div>
-
-		</div>
-	</section>
-
-	<!-- Footer -->
-	<footer class="bg-black small text-center text-white">
-		<div class="container">
-			Copyright &copy; 101 Basketball Academy 2019
-		</div>
-	</footer>
-
-	<!-- Bootstrap core JavaScript -->
-	<script src="vendor/jquery/jquery.min.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-	<!-- Plugin JavaScript -->
-	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-	<!-- Custom scripts for this template -->
-	<script src="js/grayscale.min.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/venobox/venobox.min.js"></script>
+    <script src="lib/knob/jquery.knob.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/parallax/parallax.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+    <script src="lib/appear/jquery.appear.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
 
 
-	<script async defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0ijSf1a9I14Pj_r1QroHHroF7xEqbXkw&callback=initMap"></script>
+    <script src="assets/javascript/app.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0ijSf1a9I14Pj_r1QroHHroF7xEqbXkw&callback=initMap"></script>
 
-	<script type="text/javascript" src="assets/javascript/contact.js"></script>
-	<script data-cfasync="false" type="text/javascript" src="assets/javascript/handler.js"></script>
+<script type="text/javascript" src="assets/javascript/contact.js"></script>
+<script data-cfasync="false" type="text/javascript" src="assets/javascript/handler.js"></script>
 
 
 </body>

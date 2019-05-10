@@ -531,19 +531,19 @@ footer{
   margin: 50px;
 }
 
-.card1{
+.card{
   border:1px solid white;
   border-radius:20px;
   background-color: black; 
 }
-.card1:hover{
+.card:hover{
   box-shadow: 5px 10px 8px #888888;
   transform: translate(10px,10px);
   transition: box-shadow;
 }
 
 
-.card1 img{
+.card img{
   border-radius: 20px 20px 0  0 ;
 }
 

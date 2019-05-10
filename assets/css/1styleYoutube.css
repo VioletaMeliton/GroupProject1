@@ -2,10 +2,17 @@
     background-color: #fff;
     height: 450px;
     margin-top: 100px;
-    width: 560px;
- 
+    width: 600px;
+    margin-bottom:400px;
+    padding:20px;
+    border-radius: 8px;
  }
  
+ .youtube-body{
+   background: url("../images/villanova\ finals.jpeg");
+   background-size: cover;
+   background-attachment: fixed;
+ }
  
  #youtubeHeader{
     /* position: fixed; */
@@ -50,7 +57,8 @@
     border: 2px solid #fff;
     border-radius: 8px;
     margin: 0 auto;
- 
+    margin-bottom: 20px;
+    background-color: white;
  }
  
  article  :hover{

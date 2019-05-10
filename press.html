@@ -1,169 +1,258 @@
 <!doctype html>
 <html lang="en">
 
-       
-        
+
+
 <head>
     <meta charset="utf-8">
     <title>101 Basketball Academy In Press</title>
-            
-        
+
+
     <!-- Header Bootstrap CSS File (Important)-->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
-        
-            
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+
     <!-- Header  Stylesheet File (Aizhan CSS) (Important)-->
-    <link href="assets/css/header.css" rel="stylesheet"> 
-        
+    <link href="assets/css/footer.css" rel="stylesheet">
+
     <!-- Header Responsive Stylesheet File -->
-    <link href="assets/css/responsive.css" rel="stylesheet"> 
-    
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
     <!-- Press CSS Referance  -->
     <link href="assets/css/stylePress.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
 </head>
-        
-        
-<body>
-   <header>
+
+
+<body class="press-body">
+    <div id="preloader"></div>
+
+    <header>
         <!-- header-area start -->
-                <div id="sticker" class="header-area">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12">
-        
-                                <!-- Navigation -->
-                                <nav class="navbar navbar-default">
-                                    <!-- Brand and toggle get grouped for better mobile display -->
-                                    <div class="navbar-header">
-                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                            data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-                                        <!-- Brand -->
-                                        <a class="navbar-brand page-scroll sticky-logo" href="index.html">
-                                            <img src="assets/images/101 Basketball Academy copy.png"
-                                                alt="101 basketball academy" title="101 basketball academy">
-                                        </a>
-                                    </div>
-                                    <!-- Collect the nav links, forms, and other content for toggling -->
-                                    <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1"
-                                        id="navbar-example">
-                                        <ul class="nav navbar-nav navbar-right">
-                                            <li>
-                                                <a class="page-scroll" href="index.html">About Me</a>
-                                            </li>
-                                            <li>
-                                                <a class="page-scroll" href="#services">Services</a>
-                                            </li>
-        
-                                            <li class="dropdown"><a href="#" class="dropdown-toggle"
-                                                    data-toggle="dropdown">Camps<span class="caret"></span></a>
-                                                <ul class="dropdown-menu" role="menu">
-                                                    <li><a href="upcoming-events.html">Upcoming events</a></li>
-                                                    <li><a href=#>Past events</a></li>
-                                                </ul>
-                                            </li>
-        
-        
-                                            <li>
-                                                <a class="page-scroll" href="gallery.html">Gallery</a>
-                                            </li>
-                                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Join
-                                                    Us<span class="caret"></span></a>
-                                                <ul class="dropdown-menu" role="menu">
-                                                    <li><a href=#>Volunteer</a></li>
-                                                    <li><a href=#>Sponsorship</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a class="page-scroll" href="press.html">Press</a>
-                                            </li>
-        
-                                            <li>
-                                                <a class="page-scroll" href="#contact">Contact Us</a>
-                                            </li>
-                                            
+        <div id="sticker" class="header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+
+                        <!-- Navigation -->
+                        <nav class="navbar navbar-default">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <!-- Brand -->
+                                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                                    <img src="assets/images/101 Basketball Academy copy.png"
+                                        alt="101 basketball academy" title="101 basketball academy">
+                                </a>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1"
+                                id="navbar-example">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                                        <a class="page-scroll" href="index.html#about">About Me</a>
+                                    </li>
+                                    <li>
+                                        <a class="page-scroll" href="index.html#services">Services</a>
+                                    </li>
+
+                                    <li class="dropdown"><a href="#" class="dropdown-toggle"
+                                            data-toggle="dropdown">Camps<span class="caret"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="upcoming-events.html">Upcoming events</a></li>
+                                            <li><a href="pastEventsYoutube.html">Past events</a></li>
                                         </ul>
-        
-                                    </div>
-                                    <!-- navbar-collapse -->
-                                </nav>
-                                <!-- END: Navigation -->
+                                    </li>
+
+
+                                    <li>
+                                        <a class="page-scroll" href="gallery.html">Gallery</a>
+                                    </li>
+                                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Join
+                                            Us<span class="caret"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href=#>Volunteer</a></li>
+                                            <li><a href=#>Sponsorship</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="page-scroll" href="press.html">Press</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="page-scroll" href="contact.html">Contact Us</a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                            <!-- navbar-collapse -->
+                        </nav>
+                        <!-- END: Navigation -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header-area end -->
+    </header>
+    <!-- header end -->
+
+
+
+
+
+
+
+
+    <main>
+        <!--Press  Content Starts Here-->
+
+        <div class="container" id="press">
+
+            <!-- <!-Page Heading -->
+            <h4 class="my-4">Ventura County Star</h4>
+
+
+            <div class="row">
+                <div class="col-md-7">
+                    <a
+                        href="http://archive.vcstar.com/news/education/two-day-basketball-camp-helps-players-those-with-special-needs-ep-363302782-352012561.html/">
+                        <img class="img-fluid rounded mb-3 mb-md-0" src="assets/images/venturaCountyStar.png"
+                            alt="venturaCountyStar">
+                    </a>
+                </div>
+                <div class="col-md-7">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="assets/images/newsImage.jpeg" alt="newsPhoto">
+                </div>
+
+
+
+                <div class="col-md-5">
+                    <h3>Two-day basketball camp helps players, those with special needs</h3>
+                    <br>
+                    <p>
+
+
+
+                        New Channel Islands High School girls' basketball coach Eugene Ayala has come up with a win-win
+                        idea: creating a special-needs basketball camp for people withÂ disabilities.
+
+                        "We're trying to bring something positive to the community through the school," Ayala said of
+                        the two-day camp that opened Thursday. The camp is a cooperative effort between the school and
+                        Oxnard Recreation and Community Services, with sponsors from the community kickingÂ in.
+
+                        Ayala, whose sister Gerri Lynn Ayala has cerebral palsy and uses a wheelchair, wanted to start a
+                        program to let the young women on his team interact with people with special needs, with each
+                        group learning valuable lessons fromÂ theÂ other.
+
+                        "It's a learning experience for all of us here," AyalaÂ said.</p>
+
+                    <a class="btn btn-primary"
+                        href="http://archive.vcstar.com/news/education/two-day-basketball-camp-helps-players-those-with-special-needs-ep-363302782-352012561.html/">Read
+                        Full Story</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </main>
+    <!--Press  Content Ends Here-->
+    <!-- Footer start -->
+    <section class="contact-section bg-black">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100" id="contactbox">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Address</h4>
+                            <hr class="my-4">
+                            <div class="small text-black-50">
+                                <a href="https://goo.gl/maps/Up2ci3me8ac4Dxzp9">12096 N Ventura Ave, Ojai, CA 93023
+                                    </font></a>
+
                             </div>
                         </div>
                     </div>
                 </div>
-    <!-- header-area end -->
-</header>
-<!-- header end -->
 
+                <div class="col-sm-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100" id="contactbox">
+                        <div class="card-body text-center">
+                            <i class="fas fa-envelope text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Email</h4>
+                            <hr class="my-4">
+                            <div class="small text-black-50">
+                                <a href="mailto:101basketballacademy@gmail.com">101basketballacademy@gmail.com</a>
 
-    
-        
-                  
-                 
-          
-          
-    <main>    <!--Press  Content Starts Here-->
-                
-        <div class="container" id="press">
-
-            <!-- <!-Page Heading --> 
-            <h4 class="my-4">Ventura County Star</h4>
-  
-             
-               <div class="row">
-                   <div class="col-md-7">
-                   <a href="http://archive.vcstar.com/news/education/two-day-basketball-camp-helps-players-those-with-special-needs-ep-363302782-352012561.html/" >
-                   <img class="img-fluid rounded mb-3 mb-md-0" src="assets/images/venturaCountyStar.png"  alt="venturaCountyStar">
-                   </a>
-                   </div>
-                   <div class="col-md-7">
-                        <img class="img-fluid rounded mb-3 mb-md-0" src="assets/images/newsImage.jpeg"  alt="newsPhoto">
-                   </div>
-
-                   
-              
-                   <div class="col-md-5"> 
-                   <h3>Two-day basketball camp helps players, those with special needs</h3>
-                   <br>
-                   <p>
-                        
-                      
-
-                        New Channel Islands High School girls' basketball coach Eugene Ayala has come up with a win-win idea: creating a special-needs basketball camp for people withÂ disabilities.
-
-                        "We're trying to bring something positive to the community through the school," Ayala said of the two-day camp that opened Thursday. The camp is a cooperative effort between the school and Oxnard Recreation and Community Services, with sponsors from the community kickingÂ in.
-
-                        Ayala, whose sister Gerri Lynn Ayala has cerebral palsy and uses a wheelchair, wanted to start a program to let the young women on his team interact with people with special needs, with each group learning valuable lessons fromÂ theÂ other.
-
-                        "It's a learning experience for all of us here," AyalaÂ said.</p>
-                   
-                        <a class="btn btn-primary" href="http://archive.vcstar.com/news/education/two-day-basketball-camp-helps-players-those-with-special-needs-ep-363302782-352012561.html/">Read Full Story</a>
-                   </div>
-
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            
-            </div> 
-         
-         
-    </main> 
-      <!--Press  Content Ends Here-->
+
+                <div class="col-sm-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100" id="contactbox">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Phone</h4>
+                            <hr class="my-4">
+                            <div class="small text-black-50"><a href="tel:18057468582">+1 (805) 746-8582</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div id="socialmedia">
+                        <a class="socialicons" href="https://twitter.com/villanovaprep?lang=en">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a class="socialicons" href="https://www.facebook.com/eugene.ayala.509">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a class="socialicons" href="https://github.com/VioletaMeliton/GroupProject1">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-black small text-center text-white">
+        <div class="container">
+            Copyright &copy; 101 Basketball Academy 2019
+        </div>
+    </footer>
+
+    <!-- Footer end-->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
 
-    
-<!-- Header JavaScript Libraries (Important)-->
-<script src="lib/jquery/jquery.min.js"></script>
-<script src="lib/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/javascript/app.js"></script>
+
+    <!-- Header JavaScript Libraries (Important)-->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
 
 
 
 </body>
 
 </html>
-  
-

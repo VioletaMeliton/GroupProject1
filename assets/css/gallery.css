@@ -1,8 +1,11 @@
-body {
+.gallery-body{
   font-family: Verdana, sans-serif;
   margin: 0;
-  
+  background:url("../images/sabri-tuzcu-190600-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
+
 
 h2{
   padding: 30px;

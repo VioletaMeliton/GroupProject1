@@ -586,8 +586,8 @@ div{width:70%;}
 /* 4.Google Calendar
 /*--------------------------------*/
 
-iframe{
-  margin-left:150px;
+iframe, #calendarlink{
+   margin-left: 250px;
 }
 
 /*--------------------------------*/
@@ -595,9 +595,19 @@ iframe{
 /* Upcoming events
 /*--------------------------------*/
 #upcoming-events{
-  background-image: url("../images/basketball.jpg");
+  background-image: url("../images/happy.jpg");
   background-size: cover;
   background-attachment: fixed;
+}
+
+.container-calendar{
+  position: relative;
+  margin-top:120px;
+  max-width: 700px;
+}
+
+#calendarlink{
+  color:lavender;
 }
 /*--------------------------------*/
 

@@ -32,9 +32,43 @@
 
 <body>
 	<div class="pure-u-1-5"></div>
-	<div class="pure-u-3-5">
-		<div style="display:none" id="thankyou_message">
-			<h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+<div class="pure-u-3-5">
+    <div style="display:none"  id="thankyou_message">
+        <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+    </div>
+</div>
+
+<div class="pure-u-1-5"></div>
+<div class="pure-u-3-5">
+    <form id="gform" class="pure-form pure-form-aligned" method="POST" action="https://script.google.com/macros/s/AKfycbzr6FGjGwWbOEJrlD29AY2e5ArfK8XK0S7nXUw2AA/exec">
+        <fieldset>
+            <legend style="text-align: center">Contact Form</legend>
+            <div class="pure-control-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name">
+            </div>
+            <div class="pure-control-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+            <div class="pure-control-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" cols="33" placeholder="Enter Message..." style="width: 218px"></textarea>
+            </div>
+            <div class="pure-controls">
+								<button type="submit" class="button-secondary pure-button" style="background: rgb(66, 184, 221)">Submit</button>
+							
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+		<!--Google map-->
+		<div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
+			<div id="right-panel" ></div>
+			<div id="map" frameborder="0" style="border:0" allowfullscreen></div>
+			<input type="hidden" value="villanova preparatory, ojai city" id="end" />
+		
 		</div>
 	</div>
 

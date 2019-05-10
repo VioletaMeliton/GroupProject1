@@ -1,0 +1,23 @@
+
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 400px;
+		width: 80%;
+		margin: 0 auto 0 auto;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+	  }
+	  .button-secondary {
+      color: white;
+      border-radius: 10px;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  #gform{
+  background-color:#b45b07;
+  margin: 10px;
+  }

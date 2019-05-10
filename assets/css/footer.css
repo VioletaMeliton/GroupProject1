@@ -1,11 +1,304 @@
-.contact-section {
-	padding: 5rem 0 0;
+ /* header */
+
+#sticker{
+  background-color: rgb(184, 104, 30);
+}
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+div#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fff url('../images/preloader.gif') no-repeat center center;
   }
   
+
+  /* Back to top button */
+  .back-to-top {
+    position: fixed;
+    display: none;
+    background: rgb(184, 104, 30);
+    color: #fff;
+    padding: 6px 12px 9px 12px;
+    font-size: 16px;
+    border-radius: 2px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+  }
+  
+  @media (max-width: 768px) {
+    .back-to-top {
+      bottom: 15px;
+    }
+  }
+  
+  
+  .back-to-top:hover {
+    background: #b45b07;
+    color: #fff;
+  }
+  
+
+  /*--------------------------------*/
+  
+  /*  2. Header top Area
+  /*--------------------------------*/
+  
+  .header-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(243, 118, 0, 0.486); 
+    z-index: 9;
+  }
+  
+  .navbar-header a.navbar-brand {
+    display: inline-block;
+    padding: 15px 0;
+    margin-left:20px;
+  }
+  
+  .main-menu ul.navbar-nav li {
+    display: inline-block;
+    padding: 0px 13px;
+  }
+  
+  .main-menu ul.navbar-nav li a {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 24px 0px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+  }
+  
+  .main-menu ul.navbar-nav li.active > a::after {
+    border: 1px solid #fff;
+    bottom: 0px;
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .main-menu ul.navbar-nav li.active a:hover {
+    background: none;
+    color: #fff;
+  }
+  
+  .main-menu ul.navbar-nav li.active a:focus {
+    color: #fff;
+  }
+  
+  .main-menu ul.navbar-nav li.active a {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #fff;
+    position: relative;
+  }
+  
+  .main-menu ul.navbar-nav li a:hover {
+    color: rgb(236, 155, 62);
+  }
+  
+  .navbar {
+    border: medium none;
+    margin-bottom: 0;
+  }
+  
+  .navbar-default {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  }
+  
+  .main-menu ul.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    background: none;
+    color: #333;
+  }
+  
+  .navbar-default .navbar-toggle {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 0;
+    padding: 25px 0px;
+  }
+  
+  .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background: none;
+  }
+  
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+    width: 30px;
+    height: 2px;
+  }
+  
+  .top-right.text-right {
+    float: right;
+    position: relative;
+    top: 24px;
+    margin-left: 20px;
+  }
+  
+  .top-right.text-right>li {
+    float: right;
+    margin: 0px 8px;
+  }
+  
+  .top-right.text-right li a {
+    color: #fff;
+  }
+  
+  .main-menu .dropdown ul {
+    background: rgb(231, 143, 61);
+    border-radius:20px;
+  }
+  
+  .main-menu .dropdown ul li {
+    display: block;
+  }
+  
+  /*--------------------------------*/
+  
+  /* 2.1. Stick menu
+  /*--------------------------------*/
+  
+  .header-area.stick {
+    background-color: rgba(61, 58, 53, 0.774);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .stick .navbar-header a.navbar-brand {
+    display: inline-block;
+    height: 90px;
+  }
+  
+  .stick .navbar-brand>img {
+    display: none;
+  }
+  
+  .stick .navbar-brand.sticky-logo>img {
+    display: block;
+  }
+  
+  .sticky-logo h1 {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1;
+  }
+  
+  .sticky-logo h1 span {
+    color: #c95511;
+  }
+ 
+  .stick .main-menu ul.navbar-nav li.active > a::after {
+    border: 1px solid #fff;
+    bottom: 0px;
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .stick .main-menu ul.nav>li>a:hover {
+    color: #fff;
+  }
+  
+  .stick .main-menu ul.navbar-nav li.active a {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #fff;
+    position: relative;
+  }
+  
+  .stick .mainmenu ul#nav>li:hover>a, .stick .mainmenu ul#nav li .mega-menu, .stick .mainmenu ul#nav li ul.sub-menu {
+    background-color: #f5f5f5;
+    color: #fff;
+    outline: medium none;
+  }
+  
+  .stick .mainmenu ul#nav li:hover ul.sub-menu li a:hover, .mainmenu ul#nav li .mega-menu span>a:hover, .stick .mainmenu ul#nav li {
+    color: #fff;
+  }
+  
+  .stick .logo {
+    height: 20px;
+  }
+  
+  .stick .logo a {
+    margin-top: 0px;
+  }
+  
+  .stick .main-menu ul.nav>li>a {
+    color: #fff;
+    line-height: 22px;
+    padding: 24px 0px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+  }
+  
+  .stick .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+    width: 30px;
+    height: 2px;
+  }
+  
+  .stick .navbar-default .navbar-toggle {
+    padding: 10px 0px;
+  }
+
+
+/* footer */
+.contact-section {
+	padding: 8rem 0 0;
+  }
+
+#contactbox{
+  background-color: white;
+  line-height: 1.5;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-top:40px;
+  height:200px;
+  border-radius: .5rem;
+}
+
+.fab{
+  border-radius: 200px;
+  padding:3px;
+}
+#socialmedia{
+  padding-top:100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  text-align: center;
+  letter-spacing: 0.0625em;
+}
+
   .contact-section .card {
 	border: 2px #b45b07;
 	border-bottom: 0.25rem solid #effdfc;
-
   }
   
   .contact-section .card:hover {
@@ -13,11 +306,10 @@
 	transform: translate(10px,10px);
 	cursor: pointer;
 	transition: box-shadow;
-	
   }
   
   .contact-section .card h4 {
-	font-size: 0.8rem;
+	font-size: 1.5rem;
 	font-family: 'Varela Round';
 	text-transform: uppercase;
 	letter-spacing: 0.15rem;
@@ -30,10 +322,11 @@
   }
   
   .contact-section .social {
-	margin-top: 5rem;
+  margin-top: 5rem;
+  margin-left: 550px;
   }
   
-  .contact-section .social a {
+  .contact-section .social>a {
 	text-align: center;
 	height: 3rem;
 	width: 3rem;
@@ -43,17 +336,12 @@
 	color: rgba(255, 255, 255, 0.3);
   }
   
-  .contact-section .social a:hover {
+  .contact-section .social>a:hover {
 	color: rgba(255, 255, 255, 0.5);
   }
   
-  .contact-section .social a:active {
+  .contact-section .social>a:active {
 	color: #fff;
-  }
-  
-  body {
-	font-family: 'Nunito';
-	letter-spacing: 0.0625em;
   }
   
   a {
@@ -62,7 +350,8 @@
   
   a:focus, a:hover {
 	text-decoration: none;
-	color:#b45b07;
+  color: orange;
+  background-color: transparent;
   }
   
   .bg-black {
@@ -78,9 +367,9 @@
   }
   
   footer {
-	padding: 5rem 0;
+  padding: 1rem 0;
+  color: white;
+  padding:20px;
   }
 
  
- 
-  

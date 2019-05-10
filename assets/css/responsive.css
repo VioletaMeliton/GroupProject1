@@ -71,7 +71,6 @@
 @media (max-width: 767px) {
 
   .header-area {
-    height: 120px !important;
     background: rgb(206, 125, 71);
   }
   .navbar-header a.navbar-brand, .stick .navbar-header a.navbar-brand {

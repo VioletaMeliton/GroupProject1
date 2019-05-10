@@ -439,11 +439,11 @@ ul {
 }
 
 .read-more-state ~ .read-more-trigger:before {
-  content: 'Show more';
+  content: 'Read more';
 }
 
 .read-more-state:checked ~ .read-more-trigger:before {
-  content: 'Show less';
+  content: 'Read less';
 }
 
 .read-more-trigger {
@@ -596,6 +596,10 @@ iframe{
   margin-left:150px;
 }
 
+/*--------------------------------*/
+
+/* 4.Google Calendar
+/*--------------------------------*/
 #upcoming-events{
   background-image: url("../images/basketball.jpg");
   background-size: cover;

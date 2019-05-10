@@ -12,6 +12,7 @@
         height: 100%;
         margin: 0;
         padding: 0;
+        background-color: gray;
 	  }
 	  .button-secondary {
       color: white;
@@ -22,6 +23,7 @@
   background-color: white;
   margin: 10px;
   
+  
   }
 
 .body-section{
@@ -29,5 +31,8 @@
     
 }
 
+input{
+  width: 60%
+}
 
 

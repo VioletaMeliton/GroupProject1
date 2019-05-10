@@ -208,3 +208,45 @@ function myFunction() {
     }
 }
 
+/*---------------------
+Visiter counter  
+ ---------------------*/
+
+var firebaseConfig = {
+    apiKey: "AIzaSyCsNsqrhHEh9pDZVkVM7gNHggvYikwiPLw",
+    authDomain: "ba-visitor-counter.firebaseapp.com",
+    databaseURL: "https://ba-visitor-counter.firebaseio.com",
+    projectId: "ba-visitor-counter",
+    storageBucket: "ba-visitor-counter.appspot.com",
+    messagingSenderId: "836593240244",
+    appId: "1:836593240244:web:d561c0403ea563ea"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+// const functions = require("firebase-functions");
+// const admin = require("firebase-admin");
+// admin.initializeApp();
+
+// exports.hitCounter = functions.https.onRequest((req, res) => {
+//     const counterRef = admin.database().ref("/hit_counter");
+//     return counterRef
+//         .transaction(current => {
+//             return (current || 0) + 1;
+//         })
+// });
+var database = firebase.database();
+var connectionsRef = database.ref("/connections");
+var connectedRef = database.ref(".info/connected");
+connectedRef.on("value", function (snap) {
+
+    // If they are connected..
+    if (snap.val()) {
+
+        // Add user to the connections list.
+        connectionsRef.push(true);
+        // Remove user from the connection list when they disconnect.
+        // con.onDisconnect().remove();
+    }
+});
+

@@ -10,9 +10,10 @@
 #youtubeHeader{
     /* position: fixed; */
     text-align: center;
-    background-color: red;
+    /* background-color: yellow; */
     width: 500px;
     /* margin-top: 100px; */
+    margin-left: 30px;
    
 
 }
@@ -20,10 +21,12 @@
 
 #video{
     /* position: fixed; */
+    margin-top: auto;
     text-align: center;
     background-color: #fff;
-    width: 450px;
+    width: 500px;
     top:50px;
+    
     
 }
 
@@ -31,13 +34,13 @@
 
 
 .logo{
-    width: 120px;
+    width: 150px;
     padding: 10px;
     
 }
 
 main{
-    padding: 370px 18px 10px;
+    padding: 100px 18px 10px;
 }
 
 article{

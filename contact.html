@@ -28,106 +28,56 @@
 	  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 	  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 	  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-	
+		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
 	  <!-- Custom styles for this template -->
 	  <link href="css/grayscale.min.css" rel="stylesheet">
 
 </head>
 
 <body>
-	
-	<!--Section: Contact v.1-->
-<section class="section pb-5">
-  
-	<div class="row">
-  
-	  <!--Grid column-->
-	  <div class="col-lg-5 mb-4">
-  
-		<!--Form with header-->
-		<div class="card">
-  
-		  <div class="card-body">
-			<!--Header-->
-			<div class="form-header blue accent-1">
-			  <h3><i class="fas fa-envelope"></i> Contact Us:</h3>
-			</div>
-  
-			<br>
-  
-			<!-- Form Started -->
-	<div class="container form-top">
-		<div class="row">
-			<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
-				<div class="panel panel-danger">
-					<div class="panel-body">
-						<form id="reused_form">
-						 	<div class="form-group">
-						 		<label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
-						 		<input type="text" name="name" class="form-control" placeholder="Enter Name">
-						 	</div>
-						 	<div class="form-group">
-						 		<label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
-						 		<input type="email" name="email" class="form-control" placeholder="Enter Email">
-						 	</div>
-						 	<div class="form-group">
-						 		<label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
-						 		<textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea>
-						 	</div>
+	<div class="pure-u-1-5"></div>
+<div class="pure-u-3-5">
+    <div style="display:none"  id="thankyou_message">
+        <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+    </div>
+</div>
 
+<div class="pure-u-1-5"></div>
+<div class="pure-u-3-5">
+    <form id="gform" class="pure-form pure-form-aligned" method="POST" action="https://script.google.com/macros/s/AKfycbzr6FGjGwWbOEJrlD29AY2e5ArfK8XK0S7nXUw2AA/exec">
+        <fieldset>
+            <legend style="text-align: center">Contact Form</legend>
+            <div class="pure-control-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name">
+            </div>
+            <div class="pure-control-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+            <div class="pure-control-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" cols="33" placeholder="Enter Message..." style="width: 218px"></textarea>
+            </div>
+            <div class="pure-controls">
+								<button type="submit" class="button-secondary pure-button" style="background: rgb(66, 184, 221)">Submit</button>
+							
+            </div>
+        </fieldset>
+    </form>
+</div>
 
-						 	<div class="form-group">
-						 		<button class="btn btn-raised btn-block btn-danger">Submit →</button>
-						 	</div>
-						</form>
-						<div id="error_message" style="width:100%; height:100%; display:none; ">
-						<h4>Error</h4>
-						Sorry there was an error sending your form.
-						</div>
-						<div id="success_message" style="width:100%; height:100%; display:none; ">
-						<h2>Success! Your Message was Sent Successfully.</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-<!-- Form Ended -->
-			
-  
-		  </div>
-  
-		</div>
-		<!--Form with header-->
-  
-	  </div>
-	  <!--Grid column-->
-  
-	  <!--Grid column-->
-	  <div class="col-lg-7">
-  
 		<!--Google map-->
 		<div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
-			
+			<div id="right-panel" frameborder="0" style="border:0" allowfullscreen></div>
 			<div id="map" frameborder="0" style="border:0" allowfullscreen></div>
 			<input type="hidden" value="villanova preparatory, ojai city" id="end" />
 		
 		</div>
   
 		<br>
-		<div class="row text-center">
-        <div class="col-md-12">
-			<div id="right-panel"></div>
-        </div>
-  </div>
-		  
-	  </div>
-	  <!--Grid column-->
-  
+	
 	</div>
-  
-  </section>
-  <!--Section: Contact v.1-->
 	
 	  <!-- Contact Section -->
 	  <section class="contact-section bg-black">
@@ -153,7 +103,8 @@
 				  <h4 class="text-uppercase m-0">Email</h4>
 				  <hr class="my-4">
 				  <div class="small text-black-50">
-					<a href="#">101basketballacademy@gmail.com</a>
+					<a href="mailto:101basketballacademy@gmail.com">101basketballacademy@gmail.com</a>
+					
 				  </div>
 				</div>
 			  </div>
@@ -207,8 +158,10 @@
 	<script async defer
 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0ijSf1a9I14Pj_r1QroHHroF7xEqbXkw&callback=initMap"></script>
 
-    <script type="text/javascript" src="assets/javascript/contact.js"></script>
-	<script type="text/javascript" src="assets/javascript/contact.php"></script>
+		<script type="text/javascript" src="assets/javascript/contact.js"></script>
+		<script data-cfasync="false" type="text/javascript" src="assets/javascript/handler.js"></script>
+		
+
 </body>
 
 </html>

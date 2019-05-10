@@ -2,6 +2,9 @@
   .work-right-text {
     padding: 150px 150px;
   }
+  iframe, #calendarlink{
+    margin-left: 500px;
+ }
 }
 
 /* Normal desktop :992px. */
@@ -17,6 +20,12 @@
     font-size: 18px;
     line-height: 28px;
   }
+  iframe, #calendarlink{
+    margin-left: 250px;
+ }
+ iframe, #calendarlink{
+  margin-left: 100px;
+}
 }
 
 /* Tablet desktop :768px. */
@@ -64,6 +73,13 @@
     padding: 7px 20px;
     margin-top: 5px;
   }
+  iframe, #calendarlink{
+    margin-left: 0;
+  }
+  .container-calendar{
+    width: 600px;
+  }
+
 }
 
 /* small mobile :320px. */

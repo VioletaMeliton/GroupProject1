@@ -1,4 +1,6 @@
-
+#sticker{
+  background-color: rgb(184, 104, 30);
+}
 /*----------------------------------------*/
 /*  1.  Theme default CSS
 /*----------------------------------------*/
@@ -52,7 +54,7 @@ div#preloader {
     left: 0;
     width: 100%;
     height: auto;
-    background: rgba(243, 118, 0, 0.486);
+    background: rgba(243, 118, 0, 0.486); 
     z-index: 9;
   }
   

@@ -41,7 +41,6 @@ img {
 }
 
 p {
-  margin: 0 0 50px;
   color: white;
 }
 
@@ -146,24 +145,6 @@ ul {
 .area-padding {
   padding: 70px 0px 80px;
 }
-
-.area-padding-2 {
-  padding: 70px 0px 50px;
-}
-
-.padding-2 {
-  padding-bottom: 90px;
-}
-
-.section-headline h2 {
-  display: inline-block;
-  margin-top:60px;
-  font-size: 40px;
-  font-weight: 600;
-  position: relative;
-  text-transform: capitalize;
-}
-
 
 .sec-head {
   display: inline-block;
@@ -348,9 +329,6 @@ ul {
   color: #c95511;
 }
 
-.weather{
-  text-align: center;
-}
 .stick .main-menu ul.navbar-nav li.active > a::after {
   border: 1px solid #fff;
   bottom: 0px;
@@ -415,6 +393,10 @@ ul {
   color:black;
 }
 
+#more {
+  display: none;
+}
+
 .single-well>a {
   display: block;
 }
@@ -439,6 +421,40 @@ ul {
 
 /* 4.Services Area
 /*--------------------------------*/
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+  background-color: rgb(204, 101, 5);
+}
+
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
@@ -498,9 +514,14 @@ footer{
 }
 
 .weather{
+  float: right;
+  margin-top: 68px;
+  width: 150px;;
   text-align: center;
   background-color: rgba(202, 100, 4, 0.993);
-  border-radius: 100px;
+  overflow: visible;
+  border-radius: 150px;
+  opacity: 0.7;
 }
 
 .btn.btn-primary{
@@ -510,24 +531,29 @@ footer{
 }
 
 .card{
-  border:1px solid black;
+  border:1px solid white;
   border-radius:20px;
+  background-color: black; 
 }
+.card:hover{
+  box-shadow: 5px 10px 8px #888888;
+  transform: translate(10px,10px);
+  transition: box-shadow;
+}
+
 
 .card img{
   border-radius: 20px 20px 0  0 ;
 }
 
-/*--------------------------------*/
-
-/* 4.Google Calendar
-/*--------------------------------*/
-
-iframe{
-  margin-top:120px;
+.card-title{
+  background:rgba(204, 101, 5);
 }
 
-
+.btn.btn-danger{
+  background-color: rgb(224, 112, 7);
+  border-color: rgb(224, 112, 7);
+}
 video { 
   position: absolute;
   top: 50%;
@@ -538,19 +564,18 @@ video {
   height: auto;
   z-index: -100;
   transform: translateX(-50%) translateY(-50%);
+  margin-top: 100px;
 }
 
 .services-area{
   margin-top:170px;
   padding:20px;
   background-color: black;
-  opacity: 0.7;
+  opacity: 0.8;
   color:white;
 }
 
-.card-img-top{
-  opacity: 1;
-}
+
 
 a:hover{
 background:rgba(0,0,0,0.9);
@@ -561,3 +586,20 @@ div{width:70%;}
 @media screen and (max-device-width: 800px) {
 #bgvid { display: none; }
 }
+
+/*--------------------------------*/
+
+/* 4.Google Calendar
+/*--------------------------------*/
+
+iframe{
+  margin-left:150px;
+}
+
+#upcoming-events{
+  background-image: url("../images/basketball.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+

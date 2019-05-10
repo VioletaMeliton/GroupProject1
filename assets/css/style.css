@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 /*----------------------------------------*/
 /*  1.  Theme default CSS
 /*----------------------------------------*/
@@ -96,7 +94,7 @@ a:active, a:hover {
   outline: 0 none;
 }
 
-body {
+body{
   background: #fff none repeat scroll 0 0;
   color: #444;
   font-family: 'Open Sans', sans-serif;
@@ -257,9 +255,6 @@ ul {
   height: 2px;
 }
 
-.fab{
-  background-color: #f5f5f5;
-}
 
 .city,.icon,.temp{
   color: white;
@@ -510,10 +505,6 @@ ul {
 }
 
 
-footer{
-    width: 100%;
-}
-
 .weather{
   float: right;
   margin-top: 68px;
@@ -568,6 +559,7 @@ video {
   margin-top: 100px;
 }
 
+
 .services-area{
   margin-top:170px;
   padding:20px;
@@ -599,671 +591,120 @@ iframe{
 
 /*--------------------------------*/
 
-/* 4.Google Calendar
+/* Upcoming events
 /*--------------------------------*/
 #upcoming-events{
   background-image: url("../images/basketball.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
+/*--------------------------------*/
 
-
-=======
-<<<<<<< HEAD
-body{
-    text-align: center;
-    margin: 0 auto;
-    background-image: url("../images/background\ image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: "Times New Roman", Times, serif;
-}
-* {
-    box-sizing: border-box;
+/* Footer
+/*--------------------------------*/
+.contact-section {
+	padding: 8rem 0 0;
   }
 
-.bd-example, .wrapper{
-    margin-top: 95px;
-    color:white;
+#contactbox{
+  background-color: white;
+  line-height: 1.5;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-top:40px;
+  height:200px;
+  border-radius: .5rem;
 }
 
-.wrapper{
-    color:black;
+.fab{
+  border-radius: 200px;
+  padding:3px;
+}
+#socialmedia{
+  padding-top:100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  text-align: center;
+  letter-spacing: 0.0625em;
 }
 
-
-.main-images img{
-   display: none;
-   margin: 0 auto;
-}
-
-.main-images img:first-of-type{
-    display: block;
-}
-
-h1{
-    font-weight: bold;
-}
-
-.card.mb-3{
-    margin:0 auto;
-}
-
-/* private lessons section */
-
-
+  .contact-section .card {
+	border: 2px #b45b07;
+	border-bottom: 0.25rem solid #effdfc;
+  }
+  
+  .contact-section .card:hover {
+	box-shadow: 20px 20px 20px rgba(201, 42, 42, 0.5);
+	transform: translate(10px,10px);
+	cursor: pointer;
+	transition: box-shadow;
+  }
+  
+  .contact-section .card h4 {
+	font-size: 1.5rem;
+	font-family: 'Varela Round';
+	text-transform: uppercase;
+	letter-spacing: 0.15rem;
+  }
+  
+  .contact-section .card hr {
+	border-color: #b45b07;
+	border-width: 0.25rem;
+	width: 3rem;
+  }
+  
+  .contact-section .social {
+  margin-top: 5rem;
+  margin-left: 550px;
+  }
+  
+  .contact-section .social>a {
+	text-align: center;
+	height: 3rem;
+	width: 3rem;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 100%;
+	line-height: 3rem;
+	color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .contact-section .social>a:hover {
+	color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .contact-section .social>a:active {
+	color: #fff;
+  }
+  
+  a {
+	color: #b45b07;
+  }
+  
+  a:focus, a:hover {
+	text-decoration: none;
+  color: orange;
+  background-color: transparent;
+  }
+  
+  .bg-black {
+	background-color: #161616 !important;
+  }
+  
+  .bg-primary {
+	background-color:#b45b07 !important;
+  }
+  
+  .text-primary {
+	color: #b45b07 !important;
+  }
+  
+  footer {
+  padding: 1rem 0;
+  color: white;
+  padding:20px;
+  }
 
  
-=======
-
-/*----------------------------------------*/
-/*  1.  Theme default CSS
-/*----------------------------------------*/
-div#preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 99999;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  background: #fff url('../images/preloader.gif') no-repeat center center;
-}
-
-
-html, body {
-  height: 100%;
-}
-
-.alignleft {
-  float: left;
-  margin-right: 15px;
-  margin-bottom: 15px;
-}
-
-.alignright {
-  float: right;
-  margin-left: 15px;
-  margin-bottom: 15px;
-}
-
-.aligncenter {
-  display: block;
-  margin: 0 auto 15px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-p {
-  color: white;
-}
-
-h1, h3, h4, h6 {
-  font-family: 'Raleway', sans-serif;
-  margin: 0 0 15px;
-  color: #444;
-  font-weight: 500;
-}
-
-h1 {
-  font-size: 48px;
-  line-height: 50px;
-}
-
-h2 {
-  font-size: 38px;
-  line-height: 40px;
-}
-
-h3 {
-  font-size: 30px;
-  line-height: 32px;
-}
-
-h4 {
-  font-size: 24px;
-  line-height: 26px;
-}
-
-h5 {
-  font-size: 20px;
-  line-height: 22px;
-}
-
-h6 {
-  font-size: 16px;
-  line-height: 20px;
-}
-
-a {
-  transition: all 0.3s ease 0s;
-  text-decoration: none;
-}
-
-a:hover {
-  color: rgb(213, 135, 62);
-  text-decoration: none;
-}
-
-a:active, a:hover {
-  outline: 0 none;
-}
-
-body {
-  background: #fff none repeat scroll 0 0;
-  color: #444;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  text-align: left;
-  overflow-x: hidden;
-  line-height: 22px;
-}
-
-/* Back to top button */
-.back-to-top {
-  position: fixed;
-  display: none;
-  background: rgb(184, 104, 30);
-  color: #fff;
-  padding: 6px 12px 9px 12px;
-  font-size: 16px;
-  border-radius: 2px;
-  right: 15px;
-  bottom: 15px;
-  transition: background 0.5s;
-}
-
-@media (max-width: 768px) {
-  .back-to-top {
-    bottom: 15px;
-  }
-}
-
-
-.back-to-top:hover {
-  background: #b45b07;
-  color: #fff;
-}
-
-.clear {
-  clear: both;
-}
-
-ul {
-  list-style: outside none none;
-  margin: 0;
-  padding: 0;
-}
-
-
-.area-padding {
-  padding: 70px 0px 80px;
-}
-
-.sec-head {
-  display: inline-block;
-  font-size: 17px;
-  font-weight: 600;
-  margin-bottom: 0;
-  padding: 0 0 10px;
-  text-transform: uppercase;
-  transition: all 0.4s ease 0s;
-}
-
-/*--------------------------------*/
-
-/*  2. Header top Area
-/*--------------------------------*/
-
-.header-area {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  background: rgba(243, 118, 0, 0.486);
-  z-index: 9;
-}
-
-.navbar-header a.navbar-brand {
-  display: inline-block;
-  padding: 15px 0;
-  margin-left:20px;
-}
-
-.main-menu ul.navbar-nav li {
-  display: inline-block;
-  padding: 0px 13px;
-}
-
-.main-menu ul.navbar-nav li a {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 24px 0px;
-  text-transform: capitalize;
-  letter-spacing: 1px;
-}
-
-.main-menu ul.navbar-nav li.active > a::after {
-  border: 1px solid #fff;
-  bottom: 0px;
-  content: "";
-  left: 0;
-  position: absolute;
-  width: 100%;
-}
-
-.main-menu ul.navbar-nav li.active a:hover {
-  background: none;
-  color: #fff;
-}
-
-.main-menu ul.navbar-nav li.active a:focus {
-  color: #fff;
-}
-
-.main-menu ul.navbar-nav li.active a {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  color: #fff;
-  position: relative;
-}
-
-.main-menu ul.navbar-nav li a:hover {
-  color: rgb(236, 155, 62);
-}
-
-.navbar {
-  border: medium none;
-  margin-bottom: 0;
-}
-
-.navbar-default {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-}
-
-.main-menu ul.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-  background: none;
-  color: #333;
-}
-
-.navbar-default .navbar-toggle {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  border: medium none;
-  border-radius: 0;
-  padding: 25px 0px;
-}
-
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-  background-color: transparent;
-  color: #fff;
-}
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background: none;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #fff;
-  width: 30px;
-  height: 2px;
-}
-
-.fab{
-  background-color: #f5f5f5;
-}
-
-.city,.icon,.temp{
-  color: white;
-}
-
-.top-right.text-right {
-  float: right;
-  position: relative;
-  top: 24px;
-  margin-left: 20px;
-}
-
-.top-right.text-right>li {
-  float: right;
-  margin: 0px 8px;
-}
-
-.top-right.text-right li a {
-  color: #fff;
-}
-
-.main-menu .dropdown ul {
-  background: rgb(231, 143, 61);
-  border-radius:20px;
-}
-
-.main-menu .dropdown ul li {
-  display: block;
-}
-
-/*--------------------------------*/
-
-/* 2.1. Stick menu
-/*--------------------------------*/
-
-.header-area.stick {
-  background-color: rgba(61, 58, 53, 0.774);
-  height: 80px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-.stick .navbar-header a.navbar-brand {
-  display: inline-block;
-  height: 90px;
-}
-
-.stick .navbar-brand>img {
-  display: none;
-}
-
-.stick .navbar-brand.sticky-logo>img {
-  display: block;
-}
-
-.sticky-logo h1 {
-  color: #fff;
-  padding: 0;
-  margin: 0;
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 1;
-}
-
-.sticky-logo h1 span {
-  color: #c95511;
-}
-
-.stick .main-menu ul.navbar-nav li.active > a::after {
-  border: 1px solid #fff;
-  bottom: 0px;
-  content: "";
-  left: 0;
-  position: absolute;
-  width: 100%;
-}
-
-.stick .main-menu ul.nav>li>a:hover {
-  color: #fff;
-}
-
-.stick .main-menu ul.navbar-nav li.active a {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  color: #fff;
-  position: relative;
-}
-
-.stick .mainmenu ul#nav>li:hover>a, .stick .mainmenu ul#nav li .mega-menu, .stick .mainmenu ul#nav li ul.sub-menu {
-  background-color: #f5f5f5;
-  color: #fff;
-  outline: medium none;
-}
-
-.stick .mainmenu ul#nav li:hover ul.sub-menu li a:hover, .mainmenu ul#nav li .mega-menu span>a:hover, .stick .mainmenu ul#nav li {
-  color: #fff;
-}
-
-.stick .logo {
-  height: 20px;
-}
-
-.stick .logo a {
-  margin-top: 0px;
-}
-
-.stick .main-menu ul.nav>li>a {
-  color: #fff;
-  line-height: 22px;
-  padding: 24px 0px;
-  text-transform: capitalize;
-  letter-spacing: 1px;
-}
-
-.stick .navbar-default .navbar-toggle .icon-bar {
-  background-color: #fff;
-  width: 30px;
-  height: 2px;
-}
-
-.stick .navbar-default .navbar-toggle {
-  padding: 10px 0px;
-}
-
-/*------------------------------
-  3. About Area
---------------------------------*/
-
-.about-area {
-  background-color: #f9f9f9;
-  color:black;
-}
-
-#more {
-  display: none;
-}
-
-.single-well>a {
-  display: block;
-}
-
-.single-well ul li {
-  color: #444;
-  display: block;
-  padding: 5px 0;
-}
-
-.single-well ul li i {
-  color: rgb(163, 90, 7);
-  padding-right: 10px;
-  font-size: 12px;
-}
-
-.single-well p {
-  color: #444;
-}
-
-/*--------------------------------*/
-
-/* 4.Services Area
-/*--------------------------------*/
-.read-more-state {
-  display: none;
-}
-
-.read-more-target {
-  opacity: 0;
-  max-height: 0;
-  font-size: 0;
-  transition: .25s ease;
-}
-
-.read-more-state:checked ~ .read-more-wrap .read-more-target {
-  opacity: 1;
-  font-size: inherit;
-  max-height: 999em;
-}
-
-.read-more-state ~ .read-more-trigger:before {
-  content: 'Read more';
-}
-
-.read-more-state:checked ~ .read-more-trigger:before {
-  content: 'Read less';
-}
-
-.read-more-trigger {
-  cursor: pointer;
-  display: inline-block;
-  padding: 0 .5em;
-  border: 1px solid #ddd;
-  border-radius: .25em;
-  background-color: rgb(204, 101, 5);
-}
-
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    visibility: hidden;
-    /*-webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);*/
-    -webkit-transform: translate3d(0, 100px, 0);
-    transform: translate3d(0, 100px, 0);
-  }
-
-  to {
-    opacity: 1;
-    /*visibility: visible;*/
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    visibility: hidden;
-    /*-webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);*/
-    -webkit-transform: translate3d(0, 100px, 0);
-    transform: translate3d(0, 100px, 0);
-  }
-
-  to {
-    visibility: visible;
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
-
-.section-headline.services-head>h2 {
-  margin-bottom: 25px;
-}
-
-.row.second-row {
-  margin-top: 40px;
-}
-
-.section-head>h2 {
-  color: #333;
-}
-
-
-footer{
-    width: 100%;
-}
-
-.weather{
-  float: right;
-  margin-top: 68px;
-  width: 150px;;
-  text-align: center;
-  background-color: rgba(202, 100, 4, 0.993);
-  overflow: visible;
-  border-radius: 150px;
-  opacity: 0.7;
-}
-
-.btn.btn-primary{
-  background-color: #b45b07;
-  border: 1px solid #b45b07;
-  margin: 50px;
-}
-
-.card{
-  border:1px solid white;
-  border-radius:20px;
-  background-color: black; 
-}
-.card:hover{
-  box-shadow: 5px 10px 8px #888888;
-  transform: translate(10px,10px);
-  transition: box-shadow;
-}
-
-
-.card img{
-  border-radius: 20px 20px 0  0 ;
-}
-
-.card-title{
-  background:rgba(204, 101, 5);
-}
-
-.btn.btn-danger{
-  background-color: rgb(224, 112, 7);
-  border-color: rgb(224, 112, 7);
-}
-video { 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
-  margin-top: 100px;
-}
-
-.services-area{
-  margin-top:170px;
-  padding:20px;
-  background-color: black;
-  opacity: 0.8;
-  color:white;
-}
-
-
-
-a:hover{
-background:rgba(0,0,0,0.9);
-}
-@media screen and (max-width: 500px) { 
-div{width:70%;} 
-}
-@media screen and (max-device-width: 800px) {
-#bgvid { display: none; }
-}
-
-/*--------------------------------*/
-
-/* 4.Google Calendar
-/*--------------------------------*/
-
-iframe{
-  margin-left:150px;
-}
-
-/*--------------------------------*/
-
-/* 4.Google Calendar
-/*--------------------------------*/
-#upcoming-events{
-  background-image: url("../images/basketball.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-
->>>>>>> master
->>>>>>> 2b06c486645b017d1fad3cc8af29d128dc05d547

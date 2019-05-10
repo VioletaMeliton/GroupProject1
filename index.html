@@ -25,6 +25,8 @@
     <link href="lib/venobox/venobox.css" rel="stylesheet">
     <script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
 
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
 
     <!-- Nivo Slider Theme -->
     <link href="assets/css/nivo-slider-theme.css" rel="stylesheet">
@@ -39,6 +41,7 @@
 <body data-spy="scroll" data-target="#navbar-example">
 
     <div id="preloader"></div>
+
 
     <header>
         <!-- header-area start -->
@@ -95,24 +98,13 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a class="page-scroll" href="#news">News</a>
+                                        <a class="page-scroll" href="#news">Press</a>
                                     </li>
 
                                     <li>
                                         <a class="page-scroll" href="#contact">Contact Us</a>
                                     </li>
-                                    <!-- <li class="weather">
-                                        <div class="city"></div>
-                                        <span class="icon"><img id="wicon" src="" alt="Weather icon"></span>
-                                        <div class="temp"></div>
-                                    </li> -->
-                                    <!-- <li>
-                                        <i class="fab fa-facebook"></i>
-                                        <i class="fab fa-instagram"></i>
-                                        <i class="fab fa-twitter-square"></i>
-                                    </li> -->
                                 </ul>
-
                             </div>
                             <!-- navbar-collapse -->
                         </nav>
@@ -319,7 +311,7 @@
                 <!-- Start Left services -->
                 <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInLeft delay-05s">
                     <div class='revealOnScroll' data-animation='wow fadeInLeft delay-05s'>
-                        <div class="card" id="card">
+                        <div class="card1" id="card">
                             <img src="assets/images/villanova prep boys.jpg" class="card-img-top"
                                 alt="villanova prep practice">
                             <div class="card-body">
@@ -339,7 +331,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInUp delay-05s">
-                    <div class="card" id="card">
+                    <div class="card1" id="card">
                         <img src="assets/images/pool activity.JPG" class="card-img-top" alt="pool activity">
                         <div class="card-body">
                             <h5 class="card-title">Semi-private training</h5>
@@ -360,7 +352,7 @@
                 </div>
             </div>
             <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInRight delay-05s">
-                <div class="card" id="card">
+                <div class="card1" id="card">
                     <img src="assets/images/boy training.JPG" class="card-img-top" alt="private training">
                     <div class="card-body">
                         <h5 class="card-title">Private one-on-one</h5>
@@ -524,6 +516,9 @@
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
+    <script>
+        fetch("//<Region>-<YOUR-APP-ID>.cloudfunctions.net/hitCounter")
+    </script>
     <!-- JavaScript Libraries -->
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>

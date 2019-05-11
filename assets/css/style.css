@@ -717,5 +717,46 @@ iframe, #calendarlink{
   color: white;
   padding:20px;
   }
+/*--------------------------------*/
 
+/* Volunteer
+/*--------------------------------*/
  
+#volunteer-body{
+  background: url("../images/guilherme-alvares-682646-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+  textarea.form-control{
+    height: 220px;
+  }
+
+  #volunteer{
+    margin-top:65px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+#volunteer-section{
+    margin-bottom: 50px;
+  }
+
+.volunteer-text, #volunteer-section h4{
+  color: #b45b07;
+  text-shadow: 2px 2px 8px #FF0000;
+}
+  #submitVolunteer{
+    margin:20px;
+  }
+  #submitVolunteer:hover{
+    background-color: orange;
+  }
+  .form-control{
+    color:white;
+  }
+
+  #volunteer-image:hover{
+    box-shadow: 20px 20px 20px rgba(238, 134, 36, 0.5);
+    transform: translate(-10px,-10px);
+    cursor: pointer;
+    transition: box-shadow;
+  }

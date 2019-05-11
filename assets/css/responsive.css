@@ -84,7 +84,9 @@
 
 /* small mobile :320px. */
 
-@media (max-width: 767px) {
+@media screen and (max-width: 480px) { 
+  /* CSS Code for when the screen size is 480px Screen size */
+ 
 
   .header-area {
     background: rgb(206, 125, 71);

@@ -1,6 +1,7 @@
 /*----------------------------------------*/
 /*  1.  Theme default CSS
 /*----------------------------------------*/
+
 div#preloader {
   position: fixed;
   left: 0;
@@ -15,6 +16,7 @@ div#preloader {
 
 html, body {
   height: 100%;
+  
 }
 
 .alignleft {
@@ -119,11 +121,7 @@ body{
   transition: background 0.5s;
 }
 
-@media (max-width: 768px) {
-  .back-to-top {
-    bottom: 15px;
-  }
-}
+
 
 
 .back-to-top:hover {
@@ -573,12 +571,6 @@ video {
 
 a:hover{
 background:rgba(0,0,0,0.9);
-}
-@media screen and (max-width: 500px) { 
-div{width:70%;} 
-}
-@media screen and (max-device-width: 800px) {
-#bgvid { display: none; }
 }
 
 /*--------------------------------*/

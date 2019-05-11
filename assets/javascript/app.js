@@ -257,4 +257,3 @@ connectionsRef.on("value", function (snap) {
     $("#connected-viewers").text(snap.numChildren());
 });
 
-

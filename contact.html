@@ -12,8 +12,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-				<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-				
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+        integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
     <!-- Bootstrap CSS File -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -26,6 +27,7 @@
     <link href="lib/venobox/venobox.css" rel="stylesheet">
     <script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
 
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
 
     <!-- Nivo Slider Theme -->
     <link href="assets/css/nivo-slider-theme.css" rel="stylesheet">
@@ -75,37 +77,39 @@
                                 id="navbar-example">
                                 <ul class="nav navbar-nav navbar-right">
                                     <li>
-                                        <a class="page-scroll" href="#about">About Me</a>
+                                        <a class="page-scroll" href="index.html#about">About Me</a>
                                     </li>
                                     <li>
-                                        <a class="page-scroll" href="#services">Services</a>
+                                        <a class="page-scroll" href="index.html#services">Services</a>
                                     </li>
 
                                     <li class="dropdown"><a href="#" class="dropdown-toggle"
                                             data-toggle="dropdown">Camps<span class="caret"></span></a>
                                         <ul class="dropdown-menu" role="menu">
                                             <li><a href="upcoming-events.html">Upcoming events</a></li>
-                                            <li><a href=#>Past events</a></li>
+                                            <li><a href="pastEventsYoutube.html">Past events</a></li>
                                         </ul>
                                     </li>
 
 
                                     <li>
-                                        <a class="page-scroll" href="galleryClean.html">Gallery</a>
+                                        <a class="page-scroll" href="gallery.html">Gallery</a>
                                     </li>
                                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Join
                                             Us<span class="caret"></span></a>
                                         <ul class="dropdown-menu" role="menu">
-                                            <li><a href=#>Volunteer</a></li>
-                                            <li><a href=#>Sponsorship</a></li>
+                                            <li><a href="volunteer.html">Volunteer</a></li>
+                                            <li><a
+                                                    href="https://www.gofundme.com/specialneedsbasketballcamp">Sponsorship</a>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a class="page-scroll" href="#news">News</a>
+                                        <a class="page-scroll" href="press.html">Press</a>
                                     </li>
 
                                     <li>
-                                        <a class="page-scroll" href="#contact">Contact Us</a>
+                                        <a class="page-scroll" href="contact.html">Contact Us</a>
                                     </li>
                                 </ul>
                             </div>
@@ -119,108 +123,73 @@
         <!-- header-area end -->
     </header>
     <!-- header end -->
-   <!-- <div class="pure-u-1-5"></div>
+
     <div class="pure-u-3-5">
-        <div style="display:none"  id="thankyou_message">
+        <div style="display:none" id="thankyou_message">
             <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
         </div>
     </div>
-    
-    
-        <div class="pure-u-1-5"></div>
-        <div class="pure-u-3-5">
-            <form id="gform" class="pure-form pure-form-aligned" method="POST"
-                action="https://script.google.com/macros/s/AKfycbzr6FGjGwWbOEJrlD29AY2e5ArfK8XK0S7nXUw2AA/exec">
-                <fieldset>
-                    <legend style="text-align: center">Contact Form</legend>
-                    <div class="pure-control-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Name">
+
+
+
+    <section class="body-section">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-6 mb-3 mb-md-0">
+                    <div class="container" id="map-container">
+                        <div class="card py-4 h-100">
+                            <div id="map-container-google-11" class="z-depth-1-half map-container-6"
+                                style="height: 400px">
+
+                                <div id="map" frameborder="0" style="border:0" allowfullscreen></div>
+                                <input type="hidden" value="villanova preparatory, ojai city" id="end" />
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 mb-3 mb-md-0">
+
+                            <div class="card py-4 h-100">
+                                <div class="card-body ">
+                                    <div id="right-panel">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-md-0">
+                            <div class="card py-4 h-100">
+                                <form id="gform" class="pure-form pure-form-aligned" method="POST"
+                                    action="https://script.google.com/macros/s/AKfycbzr6FGjGwWbOEJrlD29AY2e5ArfK8XK0S7nXUw2AA/exec">
+                                    <fieldset>
+                                        <legend style="text-align: center">Contact Form</legend>
+                                        <div class="pure-control-group">
+                                            <label for="name">Name</label>
+                                            <input type="text" id="name" name="name" placeholder="Name">
+                                        </div>
+                                        <div class="pure-control-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" id="email" name="email" placeholder="Email">
+                                        </div>
+                                        <div class="pure-control-group">
+                                            <label for="message">Message</label>
+                                            <textarea id="message" name="message" rows="12" cols="33"
+                                                placeholder="Enter Message..."></textarea>
+                                        </div>
+                                        <div class=" pure-controls">
+                                            <button type="submit" class="button-secondary pure-button"
+                                                style="background: rgb(199, 102, 37)">Submit</button>
+
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <div class="pure-control-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Email">
-                    </div>
-                    <div class="pure-control-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" cols="33" placeholder="Enter Message..."
-                            style="width: 218px"></textarea>
-                    </div>
-                    <div class="pure-controls">
-                        <button type="submit" class="button-secondary pure-button"
-                            style="background: rgb(66, 184, 221)">Submit</button>
-    
-                    </div>
-                </fieldset>
-            </form>
-        </div>
-    
-        <!--Google map
-        <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
-            <div id="right-panel"></div>
-            <div id="map" frameborder="0" style="border:0" allowfullscreen></div>
-            <input type="hidden" value="villanova preparatory, ojai city" id="end" />
-    
-        </div>
-    
-        <br>
-    
-				</div>-->
-				<section class="body-section">
-						<div class="container">
-		
-								<div class="row">
-		
-										<div class="col-sm-8 mb-3 mb-md-0">
-												<div class="card py-4 h-100">
-														<form id="gform" class="pure-form pure-form-aligned" method="POST"
-														action="https://script.google.com/macros/s/AKfycbzr6FGjGwWbOEJrlD29AY2e5ArfK8XK0S7nXUw2AA/exec">
-														<fieldset>
-																<legend style="text-align: center">Contact Form</legend>
-																<div class="pure-control-group">
-																		<label for="name">Name</label>
-																		<input type="text" id="name" name="name" placeholder="Name">
-																</div>
-																<div class="pure-control-group">
-																		<label for="email">Email</label>
-																		<input type="email" id="email" name="email" placeholder="Email">
-																</div>
-																<div class="pure-control-group">
-																		<label for="message">Message</label>
-																		<textarea id="message" name="message" rows="12" cols="33" placeholder="Enter Message..."
-																				style="width: 200px"></textarea>
-																</div>
-																<div class="pure-controls">
-																		<button type="submit" class="button-secondary pure-button"
-																				style="background: rgb(66, 184, 221)">Submit</button>
-								
-																</div>
-														</fieldset>
-												</form>
-												</div>
-										</div>
-		
-										<div class="col-sm-6 mb-3 mb-md-0">
-												<div class="card py-4 h-100">
-														<div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
-																
-																<div id="map" frameborder="0" style="border:0" allowfullscreen></div>
-																<input type="hidden" value="villanova preparatory, ojai city" id="end" />
-												
-														</div>
-												</div>
-										</div>
-		
-										<div class="col-sm-6 mb-3 mb-md-0">
-												<div class="card py-4 h-100">
-														<div class="card-body ">
-																<div id="right-panel"></div>
-														</div>
-												</div>
-										</div>
-								</div>
-							
-							</section>
+                </div>
+            </div>
+    </section>
 
 
 
@@ -237,8 +206,8 @@
                             <h4 class="text-uppercase m-0">Address</h4>
                             <hr class="my-4">
                             <div class="small text-black-50">
-                                <a href ="https://goo.gl/maps/Up2ci3me8ac4Dxzp9">12096 N Ventura Ave, Ojai, CA 93023</a>
-                                 
+                                <a href="https://goo.gl/maps/Up2ci3me8ac4Dxzp9">12096 N Ventura Ave, Ojai, CA 93023</a>
+
                             </div>
                         </div>
                     </div>
@@ -314,10 +283,10 @@
 
     <script src="assets/javascript/app.js"></script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0ijSf1a9I14Pj_r1QroHHroF7xEqbXkw&callback=initMap"></script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0ijSf1a9I14Pj_r1QroHHroF7xEqbXkw&callback=initMap"></script>
 
-<script type="text/javascript" src="assets/javascript/contact.js"></script>
-<script data-cfasync="false" type="text/javascript" src="assets/javascript/handler.js"></script>
+    <script type="text/javascript" src="assets/javascript/contact.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="assets/javascript/handler.js"></script>
 
 
 </body>

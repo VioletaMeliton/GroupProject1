@@ -3,15 +3,14 @@
        * element that contains the map. */
       #map {
         height: 400px;
-		width: 350px;
-		margin: 0 auto 0 auto;
+		    margin: 0 auto;
       }
      
       /* Optional: Makes the sample page fill the window. */
       html, body {
         height: 100%;
+        background-image: url("../images/crowd.jpg");
         margin: 0;
-        padding: 0;
         background-color: gray;
 	  }
 	  .button-secondary {
@@ -22,17 +21,29 @@
   #gform{
   background-color: white;
   margin: 10px;
-  
-  
+  width: 540px;
+  height: 540px;
+  border-radius: 10px;
+  float: left;
   }
 
 .body-section{
-  padding: 8rem 0 0;
-    
+  width: 120px;
 }
 
-input{
+input, #message{
   width: 60%
 }
+#message{
+  height:300px;
+}
+.pure-form-aligned .pure-control-group label {
+  text-align: center;
+}
 
+#right-panel{
+  clear: both;
+  background-color: white;
+  margin-bottom: 20px;
+}
 

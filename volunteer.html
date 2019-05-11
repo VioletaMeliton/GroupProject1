@@ -31,8 +31,7 @@
     <link href="assets/css/nivo-slider-theme.css" rel="stylesheet">
 
     <!-- Main Stylesheet File -->
-    <link href="assets/css/footer.css" rel="stylesheet">
-    <link href="assets/css/contact.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 
     <!-- Responsive Stylesheet File -->
     <link href="assets/css/responsive.css" rel="stylesheet">
@@ -42,7 +41,7 @@
 
 </head>
 
-<body data-spy="scroll" data-target="#navbar-example">
+<body id="volunteer-body">
 
     <div id="preloader"></div>
 
@@ -75,10 +74,10 @@
                                 id="navbar-example">
                                 <ul class="nav navbar-nav navbar-right">
                                     <li>
-                                        <a class="page-scroll" href="#about">About Me</a>
+                                        <a class="page-scroll" href="index.html#about">About Me</a>
                                     </li>
                                     <li>
-                                        <a class="page-scroll" href="#services">Services</a>
+                                        <a class="page-scroll" href="index.html#services">Services</a>
                                     </li>
 
                                     <li class="dropdown"><a href="#" class="dropdown-toggle"
@@ -91,7 +90,7 @@
 
 
                                     <li>
-                                        <a class="page-scroll" href="galleryClean.html">Gallery</a>
+                                        <a class="page-scroll" href="gallery.html">Gallery</a>
                                     </li>
                                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Join
                                             Us<span class="caret"></span></a>
@@ -103,11 +102,11 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a class="page-scroll" href="#news">News</a>
+                                        <a class="page-scroll" href="press.html">Press</a>
                                     </li>
 
                                     <li>
-                                        <a class="page-scroll" href="#contact">Contact Us</a>
+                                        <a class="page-scroll" href="contact.html">Contact Us</a>
                                     </li>
                                 </ul>
                             </div>
@@ -121,11 +120,79 @@
         <!-- header-area end -->
     </header>
 
+    <!-- header end -->
 
 
+    <!-- Start Volunteer area -->
+    <div id="volunteer" class="about-area area-padding">
+        <div class='revealOnScroll' data-animation="jello delay-05s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="section-headline text-center" id="volunteer-section">
+                            <h4><strong>Become a volunteer for our upcoming special needs camp</strong></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="row">
+            <!-- single-well start-->
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class='revealOnScroll' data-animation="flipInX delay-05s">
 
+                    <div class="well-left">
+                        <div class="single-well">
+                            <img id="volunteer-image" style="border-radius:10px; margin-left:10px"
+                                src="assets/images/special camp.jpg" alt="Volunteers">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- single-well end-->
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class='revealOnScroll' data-animation="swing delay-02s">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label class="volunteer-text" for="validationDefault01">First name</label>
+                                <input type="text" class="form-control" id="validationDefault01" placeholder="John"
+                                    required>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="volunteer-text" for="validationDefault02">Last name</label>
+                                <input type="text" class="form-control" id="validationDefault02" placeholder="Smith"
+                                    required>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="volunteer-text" for="exampleFormControlInput1">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com" required>
+                            </div>
+                        </div>
 
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label class="volunteer-text" for="validationTextarea"
+                                    style="margin-top:20px">Message</label>
+                                <textarea class="form-control is-invalid" id="validationTextarea"
+                                    placeholder="Tell us more about yourself" required></textarea>
+                                <div class="invalid-feedback" required>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit" id="submitVolunteer">Submit form</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- End col-->
+    </div>
+    </div>
+    <!-- End Volunteer area -->
 
     <!-- Footer start -->
     <section class="contact-section bg-black">
@@ -140,9 +207,7 @@
                             <h4 class="text-uppercase m-0">Address</h4>
                             <hr class="my-4">
                             <div class="small text-black-50">
-                                <a href="https://goo.gl/maps/Up2ci3me8ac4Dxzp9">12096 N Ventura Ave, Ojai, CA 93023
-                                    </font></a>
-
+                                <a href="https://goo.gl/maps/Up2ci3me8ac4Dxzp9">12096 N Ventura Ave, Ojai, CA 93023</a>
                             </div>
                         </div>
                     </div>
@@ -217,11 +282,10 @@
 
 
     <script src="assets/javascript/app.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0ijSf1a9I14Pj_r1QroHHroF7xEqbXkw&callback=initMap"></script>
 
-    <script type="text/javascript" src="assets/javascript/contact.js"></script>
-    <script data-cfasync="false" type="text/javascript" src="assets/javascript/handler.js"></script>
+
+
+
 
 
 </body>
